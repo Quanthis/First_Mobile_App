@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MaybeThisWillWork.MainPage">
 
-    <StackLayout BackgroundColor ="Color.Red" >
-        
+    <StackLayout BackgroundColor ="Color.Red">
+
         <Label x:Name="Handle_Clicked_Label"
         TextColor="White" Text="Welcome to Xamarin.Forms!"
         HorizontalOptions="Center"
@@ -14,6 +14,9 @@
         <Button Text="Click Me" Clicked="Handle_Clicked" />
 
         <Button Text="TestButton" Clicked="TestButton_Click"/>
+
+        <Button Text="Move to another page" Clicked="MoveToSecondPage"/>
+        
     </StackLayout>
 
 </ContentPage>

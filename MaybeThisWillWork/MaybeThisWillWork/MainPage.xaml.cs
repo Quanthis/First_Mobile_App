@@ -27,5 +27,10 @@ namespace MaybeThisWillWork
         {
             await DisplayAlert("Information", "You've pressed test button", "OK");
         }
+
+        private async void MoveToSecondPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new R301());
+        }
     }
 }
