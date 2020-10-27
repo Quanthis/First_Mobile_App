@@ -4,9 +4,12 @@
              x:Class="MaybeThisWillWork.R301">
     <ContentPage.Content>
         <StackLayout x:Name="R301Info">
+            <Image Source="R301Image.PNG" />
+            
                 <Label Text="R-301"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />   
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
