@@ -80,48 +80,23 @@ namespace MaybeThisWillWork
 
         private Weapon CreateWeaponFromData(string weaponDataFileName)
         {
-            try
-            {
-                using (FileStream fs = new FileStream(weaponDataFileName, FileMode.Open))
-                {
-                    lock (fs)
-                    {
-                        using (StreamReader reader = new StreamReader(fs))
-                        {
-                            try
-                            {
-                                string type = reader.ReadLine();
-                                string ammoType = reader.ReadLine();
-                                int damage = ToInt32(reader.ReadLine());
-                                int headDamage = ToInt32(reader.ReadLine());
-                                int legDamage = ToInt32(reader.ReadLine());
-                                string movementSpeedCut = reader.ReadLine();
-                                int magazineSize = ToInt32(reader.ReadLine());
-                                int rateOfFire = ToInt32(reader.ReadLine());
 
-                                Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
-                                Debug.WriteLine(result.ReturnValue());
+            string type = MaybeThisWillWork.R301Data.Type;
+            string ammoType = MaybeThisWillWork.R301Data.Ammo;
+            int damage = ToInt32(MaybeThisWillWork.R301Data.Damage);
+            int headDamage = ToInt32(MaybeThisWillWork.R301Data.HeadDamage);
+            int legDamage = ToInt32(MaybeThisWillWork.R301Data.LegDamage);
+            string movementSpeedCut = MaybeThisWillWork.R301Data.MovementSpeedCut;
+            int magazineSize = ToInt32(MaybeThisWillWork.R301Data.MagazineSize);
+            int rateOfFire = ToInt32(MaybeThisWillWork.R301Data.RateOfFire);
 
-                                return result;
-                            }
-                            catch(Exception)
-                            {
-                                return new Weapon("1", "1", 1, 1, 1, "1", 1, 1);
-                            }
-                        }
-                    }
-                }
-            }
-            catch(Exception)
-            {
-                CreateNewFile(weaponDataFileName);
+            Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
+            Debug.WriteLine(result.ReturnValue());
 
-                CreateWeaponFromData(weaponDataFileName);
-
-                return new Weapon("0", "0", 0, 0, 0, "0", 0, 0);
-            }
+            return result;
         }
 
+        #region archive
         private void CreateNewFile(string weaponDataFileName)
         {
             using (FileStream fs = new FileStream(weaponDataFileName, FileMode.Create))
@@ -144,5 +119,6 @@ namespace MaybeThisWillWork
                 }
             }
         }
+        #endregion
     }
 }

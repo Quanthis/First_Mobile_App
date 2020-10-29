@@ -33,7 +33,8 @@ namespace MaybeThisWillWork
 
         public string ReturnValue()
         {
-            StringBuilder builder = new StringBuilder(type.ToString());
+            StringBuilder builder = new StringBuilder("\n");
+            builder.AppendLine(type.ToString());
             builder.AppendLine(ammoType.ToString());
             builder.AppendLine(damage.ToString());
             builder.AppendLine(headDamage.ToString());
