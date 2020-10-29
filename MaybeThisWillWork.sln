@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaybeThisWillWork.Android", "MaybeThisWillWork\MaybeThisWillWork.Android\MaybeThisWillWork.Android.csproj", "{74A78AAA-0972-4C94-BD25-E4B63363AFEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaybeThisWillWork", "MaybeThisWillWork\MaybeThisWillWork\MaybeThisWillWork.csproj", "{40891AAC-1E17-4E96-893C-DCDBA4EE9747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaybeThisWillWork", "MaybeThisWillWork\MaybeThisWillWork\MaybeThisWillWork.csproj", "{40891AAC-1E17-4E96-893C-DCDBA4EE9747}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,15 +13,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Debug|Any CPU.Deploy.0 = Release|Any CPU
 		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74A78AAA-0972-4C94-BD25-E4B63363AFEC}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Debug|Any CPU.Deploy.0 = Release|Any CPU
 		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40891AAC-1E17-4E96-893C-DCDBA4EE9747}.Release|Any CPU.Deploy.0 = Release|Any CPU

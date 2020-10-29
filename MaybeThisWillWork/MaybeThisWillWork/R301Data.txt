@@ -1,0 +1,8 @@
+﻿Assault Rifle
+Light
+14
+28
+11
+10%
+18
+816

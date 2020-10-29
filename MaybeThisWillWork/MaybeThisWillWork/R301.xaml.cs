@@ -15,7 +15,7 @@ namespace MaybeThisWillWork
         public R301()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapon.R301);
+            ContentLoader content = new ContentLoader(ContentLoader.Weapons.R301);
             R301Info.Children.Add(content.Fill());
         }
     }

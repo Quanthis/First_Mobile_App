@@ -1,0 +1,10 @@
+{
+  "Type": "Assault Rifle",
+  "Ammo type": "Light",
+  "Damage": 14,
+  "Head damage": 28,
+  "Leg damage": 11,
+  "Movement speed cut": "10%",
+  "Magazine size": 18,
+  "Rate of fire [RPM]":  816
+}

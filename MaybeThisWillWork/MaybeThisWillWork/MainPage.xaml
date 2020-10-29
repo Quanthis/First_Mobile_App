@@ -15,7 +15,7 @@
 
         <Button Text="TestButton" Clicked="TestButton_Click"/>
 
-        <Button Text="Move to another page" Clicked="MoveToSecondPage"/>
+        <Button Text="R-301" Clicked="MoveToSecondPage"/>
         
     </StackLayout>
 

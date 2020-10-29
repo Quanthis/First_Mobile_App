@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using Xamarin.Forms;
+using static System.Convert;
+
 
 namespace MaybeThisWillWork
 {
     public class ContentLoader
     {
         #region Weapons
-        public enum Weapon
+        public enum Weapons
         {
             LSTAR,
             Devotion,
@@ -35,9 +39,11 @@ namespace MaybeThisWillWork
         };
         #endregion
 
-        Weapon weapon;
+        Weapons weapon;
 
-        public ContentLoader(Weapon weaponName)
+        private readonly string PATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "R301Data.txt");
+
+        public ContentLoader(Weapons weaponName)
         {
             weapon = weaponName;
         }
@@ -53,14 +59,89 @@ namespace MaybeThisWillWork
 
             switch (weapon)
             {        
-                case Weapon.R301:
-                    builder.AppendLine("Type: Assault Rifle");          //this is a temporary way of adding data, may change it in future
+                case Weapons.R301:
+                    /*builder.AppendLine("Type: Assault Rifle");          //this is a temporary way of adding data, may change it in future
                     builder.AppendLine("Damage: 14");
 
+
+
                     result.Text = builder.ToString();
+                    */
+
+                    var dataToWrite = CreateWeaponFromData(PATH);
+                    string dataReceiver = dataToWrite.ReturnValue();
+                    result.Text = dataReceiver;
+
                     return result;
 
                 default: return result;
+            }
+        }
+
+        private Weapon CreateWeaponFromData(string weaponDataFileName)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream(weaponDataFileName, FileMode.Open))
+                {
+                    lock (fs)
+                    {
+                        using (StreamReader reader = new StreamReader(fs))
+                        {
+                            try
+                            {
+                                string type = reader.ReadLine();
+                                string ammoType = reader.ReadLine();
+                                int damage = ToInt32(reader.ReadLine());
+                                int headDamage = ToInt32(reader.ReadLine());
+                                int legDamage = ToInt32(reader.ReadLine());
+                                string movementSpeedCut = reader.ReadLine();
+                                int magazineSize = ToInt32(reader.ReadLine());
+                                int rateOfFire = ToInt32(reader.ReadLine());
+
+                                Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
+                                Debug.WriteLine(result.ReturnValue());
+
+                                return result;
+                            }
+                            catch(Exception)
+                            {
+                                return new Weapon("1", "1", 1, 1, 1, "1", 1, 1);
+                            }
+                        }
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                CreateNewFile(weaponDataFileName);
+
+                CreateWeaponFromData(weaponDataFileName);
+
+                return new Weapon("0", "0", 0, 0, 0, "0", 0, 0);
+            }
+        }
+
+        private void CreateNewFile(string weaponDataFileName)
+        {
+            using (FileStream fs = new FileStream(weaponDataFileName, FileMode.Create))
+            {
+                lock (fs)
+                {
+                    using (StreamWriter writer = new StreamWriter(fs))
+                    {
+                        writer.WriteLine("\nAssault Rifle");
+                        writer.WriteLine("Light");
+                        writer.WriteLine(14);
+                        writer.WriteLine(28);
+                        writer.WriteLine(11);
+                        writer.WriteLine("10%");
+                        writer.WriteLine(18);
+                        writer.WriteLine(816);
+
+                        writer.Flush();
+                    }
+                }
             }
         }
     }
