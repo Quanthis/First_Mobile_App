@@ -40,10 +40,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DevotionData.resx</DependentUpon>
     </Compile>
-    <Compile Update="WeaponsData\Eva8Auto.Designer.cs">
+    <Compile Update="WeaponsData\Eva8AutoData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Eva8Auto.resx</DependentUpon>
+      <DependentUpon>Eva8AutoData.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponsData\FlatlineData.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -85,6 +85,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MastiffData.resx</DependentUpon>
     </Compile>
+    <Compile Update="WeaponsData\MozambiqueInfo.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MozambiqueInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\P2020Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>P2020Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\PeacekeeperData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PeacekeeperData.resx</DependentUpon>
+    </Compile>
     <Compile Update="WeaponsData\ProwlerData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -99,6 +114,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>R99Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\Re45Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Re45Data.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponsData\SentinelData.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -120,6 +140,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>VoltData.resx</DependentUpon>
     </Compile>
+    <Compile Update="WeaponsData\WingmanData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WingmanData.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -139,9 +164,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>DevotionData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="WeaponsData\Eva8Auto.resx">
+    <EmbeddedResource Update="WeaponsData\Eva8AutoData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Eva8Auto.Designer.cs</LastGenOutput>
+      <LastGenOutput>Eva8AutoData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponsData\FlatlineData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +200,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MastiffData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\MozambiqueInfo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MozambiqueInfo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\P2020Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>P2020Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\PeacekeeperData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PeacekeeperData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="WeaponsData\ProwlerData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ProwlerData.Designer.cs</LastGenOutput>
@@ -186,6 +223,10 @@
     <EmbeddedResource Update="WeaponsData\R99Data.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>R99Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\Re45Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Re45Data.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponsData\SentinelData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -202,6 +243,10 @@
     <EmbeddedResource Update="WeaponsData\VoltData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>VoltData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\WingmanData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WingmanData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

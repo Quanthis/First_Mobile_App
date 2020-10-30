@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.WeaponsData {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MastiffData {
+    internal class MozambiqueInfo {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MastiffData() {
+        internal MozambiqueInfo() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.WeaponsData {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.WeaponsData.MastiffData", typeof(MastiffData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.WeaponsData.MozambiqueInfo", typeof(MozambiqueInfo).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 104.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 45.
         /// </summary>
         internal static string Damage {
             get {
@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 128.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 69.
         /// </summary>
         internal static string HeadDamage {
             get {
@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 104.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 42.
         /// </summary>
         internal static string LegDamage {
             get {
@@ -97,7 +97,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 6.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 4.
         /// </summary>
         internal static string MagazineSize {
             get {
@@ -106,7 +106,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 10%.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 0%.
         /// </summary>
         internal static string MovementSpeedCut {
             get {
@@ -115,7 +115,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 60.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 180.
         /// </summary>
         internal static string RateOfFire {
             get {
@@ -124,7 +124,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Shotgun.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pistol.
         /// </summary>
         internal static string Type {
             get {

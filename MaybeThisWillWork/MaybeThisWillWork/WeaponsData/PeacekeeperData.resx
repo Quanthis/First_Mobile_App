@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Ammo" xml:space="preserve">
-    <value>Shotgun Cells</value>
+    <value>Unrefinable</value>
   </data>
   <data name="Damage" xml:space="preserve">
-    <value>104</value>
+    <value>110</value>
   </data>
   <data name="HeadDamage" xml:space="preserve">
-    <value>128</value>
+    <value>143</value>
   </data>
   <data name="LegDamage" xml:space="preserve">
-    <value>104</value>
+    <value>88</value>
   </data>
   <data name="MagazineSize" xml:space="preserve">
     <value>6</value>
@@ -136,9 +136,9 @@
     <value>10%</value>
   </data>
   <data name="RateOfFire" xml:space="preserve">
-    <value>60</value>
+    <value>75</value>
   </data>
   <data name="Type" xml:space="preserve">
-    <value>Shotgun</value>
+    <value>Shotgun [Care Package]</value>
   </data>
 </root>

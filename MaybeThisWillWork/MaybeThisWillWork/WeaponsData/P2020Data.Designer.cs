@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.WeaponsData {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MastiffData {
+    internal class P2020Data {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MastiffData() {
+        internal P2020Data() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.WeaponsData {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.WeaponsData.MastiffData", typeof(MastiffData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.WeaponsData.P2020Data", typeof(P2020Data).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,78 +57,6 @@ namespace MaybeThisWillWork.WeaponsData {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Shotgun Cells.
-        /// </summary>
-        internal static string Ammo {
-            get {
-                return ResourceManager.GetString("Ammo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 104.
-        /// </summary>
-        internal static string Damage {
-            get {
-                return ResourceManager.GetString("Damage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 128.
-        /// </summary>
-        internal static string HeadDamage {
-            get {
-                return ResourceManager.GetString("HeadDamage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 104.
-        /// </summary>
-        internal static string LegDamage {
-            get {
-                return ResourceManager.GetString("LegDamage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 6.
-        /// </summary>
-        internal static string MagazineSize {
-            get {
-                return ResourceManager.GetString("MagazineSize", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 10%.
-        /// </summary>
-        internal static string MovementSpeedCut {
-            get {
-                return ResourceManager.GetString("MovementSpeedCut", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 60.
-        /// </summary>
-        internal static string RateOfFire {
-            get {
-                return ResourceManager.GetString("RateOfFire", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Shotgun.
-        /// </summary>
-        internal static string Type {
-            get {
-                return ResourceManager.GetString("Type", resourceCulture);
             }
         }
     }

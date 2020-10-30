@@ -121,24 +121,24 @@
     <value>Shotgun Cells</value>
   </data>
   <data name="Damage" xml:space="preserve">
-    <value>104</value>
+    <value>45</value>
   </data>
   <data name="HeadDamage" xml:space="preserve">
-    <value>128</value>
+    <value>69</value>
   </data>
   <data name="LegDamage" xml:space="preserve">
-    <value>104</value>
+    <value>42</value>
   </data>
   <data name="MagazineSize" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="MovementSpeedCut" xml:space="preserve">
-    <value>10%</value>
+    <value>0%</value>
   </data>
   <data name="RateOfFire" xml:space="preserve">
-    <value>60</value>
+    <value>180</value>
   </data>
   <data name="Type" xml:space="preserve">
-    <value>Shotgun</value>
+    <value>Pistol</value>
   </data>
 </root>
