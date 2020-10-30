@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork {
+namespace MaybeThisWillWork.WeaponsData {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace MaybeThisWillWork {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class R301Data {
+    internal class HavocData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal R301Data() {
+        internal HavocData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.R301Data", typeof(R301Data).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.WeaponsData.HavocData", typeof(HavocData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,78 +57,6 @@ namespace MaybeThisWillWork {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Light.
-        /// </summary>
-        internal static string Ammo {
-            get {
-                return ResourceManager.GetString("Ammo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 14.
-        /// </summary>
-        internal static string Damage {
-            get {
-                return ResourceManager.GetString("Damage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 28.
-        /// </summary>
-        internal static string HeadDamage {
-            get {
-                return ResourceManager.GetString("HeadDamage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 11.
-        /// </summary>
-        internal static string LegDamage {
-            get {
-                return ResourceManager.GetString("LegDamage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 18.
-        /// </summary>
-        internal static string MagazineSize {
-            get {
-                return ResourceManager.GetString("MagazineSize", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 10%.
-        /// </summary>
-        internal static string MovementSpeedCut {
-            get {
-                return ResourceManager.GetString("MovementSpeedCut", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 816.
-        /// </summary>
-        internal static string RateOfFire {
-            get {
-                return ResourceManager.GetString("RateOfFire", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Assault Rifle.
-        /// </summary>
-        internal static string Type {
-            get {
-                return ResourceManager.GetString("Type", resourceCulture);
             }
         }
     }

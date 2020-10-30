@@ -25,10 +25,100 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="R301Data.Designer.cs">
+    <Compile Update="WeaponsData\AlternatorData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AlternatorData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\ChargeRifleData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ChargeRifleData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\DevotionData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DevotionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\Eva8Auto.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Eva8Auto.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\FlatlineData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FlatlineData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\G7ScoutData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>G7ScoutData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\HavocData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HavocData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\HemlokData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HemlokData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\KraberData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>KraberData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\LongbowData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LongbowData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\LstarData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LstarData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\MastiffData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MastiffData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\ProwlerData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ProwlerData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\R301Data.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>R301Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\R99Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>R99Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\SentinelData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SentinelData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\SpitfireData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SpitfireData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\TripleTakeData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TripleTakeData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="WeaponsData\VoltData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VoltData.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -37,9 +127,81 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Update="R301Data.resx">
+    <EmbeddedResource Update="WeaponsData\AlternatorData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AlternatorData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\ChargeRifleData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChargeRifleData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\DevotionData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DevotionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\Eva8Auto.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Eva8Auto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\FlatlineData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FlatlineData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\G7ScoutData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>G7ScoutData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\HavocData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HavocData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\HemlokData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HemlokData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\KraberData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KraberData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\LongbowData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LongbowData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\LstarData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LstarData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\MastiffData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MastiffData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\ProwlerData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProwlerData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\R301Data.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>R301Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\R99Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>R99Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\SentinelData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SentinelData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\SpitfireData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpitfireData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\TripleTakeData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TripleTakeData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WeaponsData\VoltData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VoltData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

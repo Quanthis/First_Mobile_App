@@ -81,14 +81,14 @@ namespace MaybeThisWillWork
         private Weapon CreateWeaponFromData(string weaponDataFileName)
         {
 
-            string type = MaybeThisWillWork.R301Data.Type;
-            string ammoType = MaybeThisWillWork.R301Data.Ammo;
-            int damage = ToInt32(MaybeThisWillWork.R301Data.Damage);
-            int headDamage = ToInt32(MaybeThisWillWork.R301Data.HeadDamage);
-            int legDamage = ToInt32(MaybeThisWillWork.R301Data.LegDamage);
-            string movementSpeedCut = MaybeThisWillWork.R301Data.MovementSpeedCut;
-            int magazineSize = ToInt32(MaybeThisWillWork.R301Data.MagazineSize);
-            int rateOfFire = ToInt32(MaybeThisWillWork.R301Data.RateOfFire);
+            string type = MaybeThisWillWork.WeaponsData.R301Data.Type;
+            string ammoType = MaybeThisWillWork.WeaponsData.R301Data.Ammo;
+            int damage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.Damage);
+            int headDamage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.HeadDamage);
+            int legDamage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.LegDamage);
+            string movementSpeedCut = MaybeThisWillWork.WeaponsData.R301Data.MovementSpeedCut;
+            int magazineSize = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.MagazineSize);
+            int rateOfFire = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.RateOfFire);
 
             Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
             Debug.WriteLine(result.ReturnValue());
