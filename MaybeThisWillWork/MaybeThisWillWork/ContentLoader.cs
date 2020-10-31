@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using Xamarin.Forms;
 using static System.Convert;
@@ -41,8 +43,6 @@ namespace MaybeThisWillWork
 
         Weapons weapon;
 
-        private readonly string PATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "R301Data.txt");
-
         public ContentLoader(Weapons weaponName)
         {
             weapon = weaponName;
@@ -55,7 +55,8 @@ namespace MaybeThisWillWork
                 Text = ""
             };
 
-            StringBuilder builder = new StringBuilder("");
+            //StringBuilder builder = new StringBuilder("");
+            string allWeaponsResourcePath = "MaybeThisWillWork.WeaponsData.";
 
             switch (weapon)
             {        
@@ -68,7 +69,10 @@ namespace MaybeThisWillWork
                     result.Text = builder.ToString();
                     */
 
-                    var dataToWrite = CreateWeaponFromData(PATH);
+                    string dataFile_R301 = "R301Data";
+                    string fullPath = allWeaponsResourcePath + dataFile_R301;
+
+                    var dataToWrite = CreateWeaponFromData(fullPath);
                     string dataReceiver = dataToWrite.ReturnValue();
                     result.Text = dataReceiver;
 
@@ -78,17 +82,18 @@ namespace MaybeThisWillWork
             }
         }
 
-        private Weapon CreateWeaponFromData(string weaponDataFileName)
+        private Weapon CreateWeaponFromData(string weaponResourcePath)
         {
+            ResourceManager resourceManager = new ResourceManager(weaponResourcePath, Assembly.GetExecutingAssembly());
 
-            string type = MaybeThisWillWork.WeaponsData.R301Data.Type;
-            string ammoType = MaybeThisWillWork.WeaponsData.R301Data.Ammo;
-            int damage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.Damage);
-            int headDamage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.HeadDamage);
-            int legDamage = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.LegDamage);
-            string movementSpeedCut = MaybeThisWillWork.WeaponsData.R301Data.MovementSpeedCut;
-            int magazineSize = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.MagazineSize);
-            int rateOfFire = ToInt32(MaybeThisWillWork.WeaponsData.R301Data.RateOfFire);
+            string type = resourceManager.GetString("Type");
+            string ammoType = resourceManager.GetString("Ammo");
+            int damage = ToInt32(resourceManager.GetString("Damage"));
+            int headDamage = ToInt32(resourceManager.GetString("HeadDamage"));
+            int legDamage = ToInt32(resourceManager.GetString("LegDamage"));
+            string movementSpeedCut = resourceManager.GetString("MovementSpeedCut");
+            int magazineSize = ToInt32(resourceManager.GetString("MagazineSize"));
+            int rateOfFire = ToInt32(resourceManager.GetString("RateOfFire"));
 
             Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
             Debug.WriteLine(result.ReturnValue());
