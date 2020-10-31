@@ -33,15 +33,19 @@ namespace MaybeThisWillWork
 
         public string ReturnValue()
         {
+            string toPad = " ";
+            char padSign = ' ';
+            ushort numberOfPads = 55;
+
             StringBuilder builder = new StringBuilder("\n");
-            builder.AppendLine(type.ToString());
-            builder.AppendLine(ammoType.ToString());
-            builder.AppendLine(damage.ToString());
-            builder.AppendLine(headDamage.ToString());
-            builder.AppendLine(legDamage.ToString());
-            builder.AppendLine(movementSpeedCut.ToString());
-            builder.AppendLine(magazineSize.ToString());
-            builder.AppendLine(rateOfFire.ToString());
+            builder.AppendLine("Weapon Type: \n" + toPad.PadRight(numberOfPads, padSign) + type.ToString());
+            builder.AppendLine("\nUsed ammo: \n" + toPad.PadRight(numberOfPads, padSign) + ammoType.ToString());
+            builder.AppendLine("\nDamage: \n" + toPad.PadRight(numberOfPads, padSign) + damage.ToString());
+            builder.AppendLine("\nHeadshot damange: \n" + toPad.PadRight(numberOfPads, padSign) + headDamage.ToString());
+            builder.AppendLine("\nLeg damage: \n" + toPad.PadRight(numberOfPads, padSign) + legDamage.ToString());
+            builder.AppendLine("\nMovement speed slowdown: \n" + toPad.PadRight(numberOfPads, padSign) + movementSpeedCut.ToString());
+            builder.AppendLine("\nBase magazine size: \n" + toPad.PadRight(numberOfPads, padSign) + magazineSize.ToString());
+            builder.AppendLine("\nRate of fire: \n" + toPad.PadRight(numberOfPads, padSign) + rateOfFire.ToString());
 
             return builder.ToString();
         }

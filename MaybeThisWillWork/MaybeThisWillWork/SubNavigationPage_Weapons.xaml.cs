@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaybeThisWillWork.WeaponContentPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,9 @@ namespace MaybeThisWillWork
             await Navigation.PushAsync(new Flatline());
         }
 
-
+        private async void MoveToAlternatorPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Alternator());
+        }
     }
 }

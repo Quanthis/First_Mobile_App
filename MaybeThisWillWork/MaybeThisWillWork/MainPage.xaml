@@ -8,10 +8,12 @@
         <Label Text="Main Page" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
-    <StackLayout Margin="20">
+    <ScrollView>
+        <StackLayout Margin="20">
 
-        <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" />
+            <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" />
 
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>

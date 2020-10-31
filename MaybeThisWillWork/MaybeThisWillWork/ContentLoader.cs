@@ -52,7 +52,9 @@ namespace MaybeThisWillWork
         {
             Label result = new Label
             {
-                Text = ""
+                Text = "",
+                FontSize = 17,
+                Margin = 3
             };
 
             string allWeaponsResourcePath = "MaybeThisWillWork.WeaponsData.";

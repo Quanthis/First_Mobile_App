@@ -148,6 +148,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="WeaponContentPages\Alternator.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\R301.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
