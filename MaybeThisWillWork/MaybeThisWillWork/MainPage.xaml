@@ -1,23 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.MainPage">
+             x:Class="MaybeThisWillWork.MainPage"
+             BackgroundColor="Red">
+    
+    <NavigationPage.TitleView>
+        <Label Text="Main Page" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+    </NavigationPage.TitleView>
 
-    <StackLayout BackgroundColor ="Color.Red">
+    <StackLayout Margin="20">
 
-        <Label x:Name="Handle_Clicked_Label"
-        TextColor="White" Text="Welcome to Xamarin.Forms!"
-        HorizontalOptions="Center"
-        VerticalOptions="CenterAndExpand" 
-        />
-
-        <Button Text="Click Me" Clicked="Handle_Clicked" />
-
-        <Button Text="TestButton" Clicked="TestButton_Click"/>
-
-        <Button Text="R-301" Clicked="MoveToR301Page"/>
-
-        <Button Text="Flatline VK-47" Clicked="MoveToFlatlinePage"/>
+        <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" />
 
     </StackLayout>
 

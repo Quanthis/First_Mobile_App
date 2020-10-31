@@ -15,27 +15,9 @@ namespace MaybeThisWillWork
             InitializeComponent();
         }
 
-        int count = 0;
-        private void Handle_Clicked(object sender, EventArgs e)
+        private async void MoveToWeaponsSubpage(object sender, EventArgs e)
         {
-            ++count;
-            //((Button)sender).Text = $"You clicked {count} times.";
-            Handle_Clicked_Label.Text = $"You clicked {count} times.";
-        }
-
-        private async void TestButton_Click(object sender, EventArgs e)
-        {
-            await DisplayAlert("Information", "You've pressed test button", "OK");
-        }
-
-        private async void MoveToR301Page(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new R301());
-        }
-
-        private async void MoveToFlatlinePage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Flatline());
+            await Navigation.PushAsync(new SubNavigationPage_Weapons());
         }
     }
 }

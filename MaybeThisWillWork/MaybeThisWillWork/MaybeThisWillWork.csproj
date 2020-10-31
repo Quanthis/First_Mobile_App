@@ -152,6 +152,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Weapons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="WeaponsData\AlternatorData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AlternatorData.Designer.cs</LastGenOutput>
