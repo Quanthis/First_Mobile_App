@@ -19,6 +19,7 @@ namespace MaybeThisWillWork
             LSTAR,
             Devotion,
             Havoc,
+            Volt,
 
             Mastiff,
             Eva8,
@@ -37,7 +38,13 @@ namespace MaybeThisWillWork
             Prowler,
             Flatline,
             Spitfire,
-            Hemlok
+            Hemlok,
+            Wingman,
+
+            Longbow,
+            TripleTake,
+            ChargeRifle,
+            Sentinel
         };
         #endregion
 
@@ -54,14 +61,13 @@ namespace MaybeThisWillWork
             {
                 Text = "",
                 FontSize = 17,
-                Margin = 3
+                Margin = 3,
+                LineHeight = 2,
             };
 
             string allWeaponsResourcePath = "MaybeThisWillWork.WeaponsData.";
             string fullPath;
             string weaponFile;
-            Weapon dataToWrite;
-            string dataReceiver;
 
             switch (weapon)
             {        
@@ -70,9 +76,7 @@ namespace MaybeThisWillWork
                     weaponFile = "R301Data";
                     fullPath = allWeaponsResourcePath + weaponFile;
 
-                    dataToWrite = CreateWeaponFromData(fullPath);
-                    dataReceiver = dataToWrite.ReturnValue();
-                    result.Text = dataReceiver;
+                    result.Text = DoCasesWork(fullPath);
 
                     return result;
                     
@@ -82,14 +86,220 @@ namespace MaybeThisWillWork
                     weaponFile = "FlatlineData";
                     fullPath = allWeaponsResourcePath + weaponFile;
 
-                    dataToWrite = CreateWeaponFromData(fullPath);
-                    dataReceiver = dataToWrite.ReturnValue();
-                    result.Text = dataReceiver;
+                    result.Text = DoCasesWork(fullPath);
 
-                    return result;                    
+                    return result;
+
+                case Weapons.Alternator:
+
+                    weaponFile = "AlternatorData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                
+
+                case Weapons.ChargeRifle:
+
+                    weaponFile = "ChargeRifleData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Devotion:
+
+                    weaponFile = "DevotionData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Eva8:
+
+                    weaponFile = "Eva8AutoData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.G7Scout:
+
+                    weaponFile = "G7ScoutData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Havoc:
+
+                    weaponFile = "HavocData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Hemlok:
+
+                    weaponFile = "HemlokData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Kraber:
+
+                    weaponFile = "KraberData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Longbow:
+
+                    weaponFile = "LongbowData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.LSTAR:
+
+                    weaponFile = "LstarData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Mastiff:
+
+                    weaponFile = "MastiffData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Mozambique:
+
+                    weaponFile = "MozambiqueData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.P2020:
+
+                    weaponFile = "P2020Data";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Peacekeeper:
+
+                    weaponFile = "PeacekeeperData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+
+                case Weapons.Prowler:
+
+                    weaponFile = "ProwlerData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.R99:
+
+                    weaponFile = "R99Data";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Re45:
+
+                    weaponFile = "Re45Data";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Sentinel:
+
+                    weaponFile = "SentinelData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Spitfire:
+
+                    weaponFile = "SpitfireData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.TripleTake:
+
+                    weaponFile = "Eva8AutoData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Volt:
+
+                    weaponFile = "VoltData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
+
+                case Weapons.Wingman:
+
+                    weaponFile = "WingmanData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    result.Text = DoCasesWork(fullPath);
+
+                    return result;
 
                 default: return result;
             }
+        }
+
+        private string DoCasesWork(string fullPath)
+        {
+            Weapon dataToWrite = CreateWeaponFromData(fullPath);
+            string dataReceiver = dataToWrite.ReturnValue();
+            return dataReceiver;
         }
 
         private Weapon CreateWeaponFromData(string weaponResourcePath)
