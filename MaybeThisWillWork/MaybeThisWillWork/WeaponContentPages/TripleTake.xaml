@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.WeaponContentPages.TripleTakexaml">
+             x:Class="MaybeThisWillWork.WeaponContentPages.TripleTakexaml"
+             BackgroundImageSource="Background.png">
     
     <NavigationPage.TitleView>
         <Label Text="Triple Take" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -10,6 +11,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="WeaponInfo" Margin="20">
+
+                <Image Source="TripleTakeImage.PNG" />
 
             </StackLayout>
         </ScrollView>

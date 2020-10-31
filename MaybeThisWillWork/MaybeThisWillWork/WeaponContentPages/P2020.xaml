@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.WeaponContentPages.P2020">
+             x:Class="MaybeThisWillWork.WeaponContentPages.P2020"
+             BackgroundImageSource="Background.png">
+    
     <NavigationPage.TitleView>
         <Label Text="P2020" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
@@ -9,6 +11,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="WeaponInfo" Margin="20">
+
+                <Image Source="P2020Image.PNG" />
 
             </StackLayout>
         </ScrollView>

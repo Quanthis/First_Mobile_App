@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.WeaponContentPages.Alternator">
+             x:Class="MaybeThisWillWork.WeaponContentPages.Alternator"
+             BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
-        <Label Text="Alternator" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Alternator SMG" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="AlternatorInfo" Margin="20">
-
+                <Image Source="AlternatorImage.PNG" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

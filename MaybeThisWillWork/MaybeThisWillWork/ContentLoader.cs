@@ -63,6 +63,7 @@ namespace MaybeThisWillWork
                 FontSize = 17,
                 Margin = 3,
                 LineHeight = 2,
+                TextColor = Xamarin.Forms.Color.White
             };
 
             string allWeaponsResourcePath = "MaybeThisWillWork.WeaponsData.";
