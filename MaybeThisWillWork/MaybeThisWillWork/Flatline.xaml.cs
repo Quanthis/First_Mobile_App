@@ -15,6 +15,8 @@ namespace MaybeThisWillWork
         public Flatline()
         {
             InitializeComponent();
+            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Flatline);
+            FlatlineInfo.Children.Add(content.Fill());
         }
     }
 }

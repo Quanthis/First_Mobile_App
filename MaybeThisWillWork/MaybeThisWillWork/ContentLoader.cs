@@ -55,28 +55,36 @@ namespace MaybeThisWillWork
                 Text = ""
             };
 
-            //StringBuilder builder = new StringBuilder("");
             string allWeaponsResourcePath = "MaybeThisWillWork.WeaponsData.";
+            string fullPath;
+            string weaponFile;
+            Weapon dataToWrite;
+            string dataReceiver;
 
             switch (weapon)
             {        
                 case Weapons.R301:
-                    /*builder.AppendLine("Type: Assault Rifle");          //this is a temporary way of adding data, may change it in future
-                    builder.AppendLine("Damage: 14");
 
+                    weaponFile = "R301Data";
+                    fullPath = allWeaponsResourcePath + weaponFile;
 
-
-                    result.Text = builder.ToString();
-                    */
-
-                    string dataFile_R301 = "R301Data";
-                    string fullPath = allWeaponsResourcePath + dataFile_R301;
-
-                    var dataToWrite = CreateWeaponFromData(fullPath);
-                    string dataReceiver = dataToWrite.ReturnValue();
+                    dataToWrite = CreateWeaponFromData(fullPath);
+                    dataReceiver = dataToWrite.ReturnValue();
                     result.Text = dataReceiver;
 
                     return result;
+                    
+
+                case Weapons.Flatline:
+
+                    weaponFile = "FlatlineData";
+                    fullPath = allWeaponsResourcePath + weaponFile;
+
+                    dataToWrite = CreateWeaponFromData(fullPath);
+                    dataReceiver = dataToWrite.ReturnValue();
+                    result.Text = dataReceiver;
+
+                    return result;                    
 
                 default: return result;
             }

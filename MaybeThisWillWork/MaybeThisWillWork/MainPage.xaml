@@ -15,8 +15,10 @@
 
         <Button Text="TestButton" Clicked="TestButton_Click"/>
 
-        <Button Text="R-301" Clicked="MoveToSecondPage"/>
-        
+        <Button Text="R-301" Clicked="MoveToR301Page"/>
+
+        <Button Text="Flatline VK-47" Clicked="MoveToFlatlinePage"/>
+
     </StackLayout>
 
 </ContentPage>

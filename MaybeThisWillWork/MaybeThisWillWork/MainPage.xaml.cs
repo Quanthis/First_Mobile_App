@@ -28,9 +28,14 @@ namespace MaybeThisWillWork
             await DisplayAlert("Information", "You've pressed test button", "OK");
         }
 
-        private async void MoveToSecondPage(object sender, EventArgs e)
+        private async void MoveToR301Page(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new R301());
+        }
+
+        private async void MoveToFlatlinePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Flatline());
         }
     }
 }
