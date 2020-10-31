@@ -148,7 +148,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="R301.xaml">
+    <EmbeddedResource Update="WeaponContentPages\R301.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
