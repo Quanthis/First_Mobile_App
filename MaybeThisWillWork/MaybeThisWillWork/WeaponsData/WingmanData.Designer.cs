@@ -59,5 +59,77 @@ namespace MaybeThisWillWork.WeaponsData {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Heavy.
+        /// </summary>
+        internal static string Ammo {
+            get {
+                return ResourceManager.GetString("Ammo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 45.
+        /// </summary>
+        internal static string Damage {
+            get {
+                return ResourceManager.GetString("Damage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 90.
+        /// </summary>
+        internal static string HeadDamage {
+            get {
+                return ResourceManager.GetString("HeadDamage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 41.
+        /// </summary>
+        internal static string LegDamage {
+            get {
+                return ResourceManager.GetString("LegDamage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 5.
+        /// </summary>
+        internal static string MagazineSize {
+            get {
+                return ResourceManager.GetString("MagazineSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 0%.
+        /// </summary>
+        internal static string MovementSpeedCut {
+            get {
+                return ResourceManager.GetString("MovementSpeedCut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 156.
+        /// </summary>
+        internal static string RateOfFire {
+            get {
+                return ResourceManager.GetString("RateOfFire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pistol.
+        /// </summary>
+        internal static string Type {
+            get {
+                return ResourceManager.GetString("Type", resourceCulture);
+            }
+        }
     }
 }

@@ -266,7 +266,7 @@ namespace MaybeThisWillWork
 
                 case Weapons.TripleTake:
 
-                    weaponFile = "Eva8AutoData";
+                    weaponFile = "TripleTakeData";
                     fullPath = allWeaponsResourcePath + weaponFile;
 
                     result.Text = DoCasesWork(fullPath);

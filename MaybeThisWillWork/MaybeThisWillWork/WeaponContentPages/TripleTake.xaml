@@ -4,7 +4,7 @@
              x:Class="MaybeThisWillWork.WeaponContentPages.TripleTakexaml">
     
     <NavigationPage.TitleView>
-        <Label Text="Hemlok" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Triple Take" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>

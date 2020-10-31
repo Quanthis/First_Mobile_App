@@ -25,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
+      <DependentUpon>TripleTake.xaml</DependentUpon>
+    </Compile>
     <Compile Update="WeaponsData\AlternatorData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -85,10 +88,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MastiffData.resx</DependentUpon>
     </Compile>
-    <Compile Update="WeaponsData\MozambiqueInfo.Designer.cs">
+    <Compile Update="WeaponsData\MozambiqueData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>MozambiqueInfo.resx</DependentUpon>
+      <DependentUpon>MozambiqueData.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponsData\P2020Data.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -212,7 +215,7 @@
     <EmbeddedResource Update="WeaponContentPages\Spitfire.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="WeaponContentPages\TripleTakexaml.xaml">
+    <EmbeddedResource Update="WeaponContentPages\TripleTake.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\Volt.xaml">
@@ -269,9 +272,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MastiffData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="WeaponsData\MozambiqueInfo.resx">
+    <EmbeddedResource Update="WeaponsData\MozambiqueData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MozambiqueInfo.Designer.cs</LastGenOutput>
+      <LastGenOutput>MozambiqueData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponsData\P2020Data.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -31,7 +31,7 @@
                 <Button Text="R99" Clicked="MoveToR99Page"/>
                 
                 
-                <Button Text="Charge Rifle" Clicked="MoveChargeRiflePage"/>
+                <Button Text="Charge Rifle" Clicked="MoveToChargeRiflePage"/>
 
                 <Button Text="Longbow DMR" Clicked="MoveToLongbowPage"/>
 
