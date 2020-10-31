@@ -13,9 +13,47 @@
 
                 <Button Text="R-301" Clicked="MoveToR301Page"/>
 
-                <Button Text="Flatline VK-47" Clicked="MoveToFlatlinePage"/>
+                <Button Text="VK-47 Flatline" Clicked="MoveToFlatlinePage"/>
+
+                <Button Text="G7 Scout" Clicked="MoveToG7ScoutPage"/>
+
+                <Button Text="Havoc Rifle" Clicked="MoveToHavocPage"/>
+
+                <Button Text="Hemlok Burst AR" Clicked="MoveToHemlokPage"/>                
+               
 
                 <Button Text="Alternator" Clicked="MoveToAlternatorPage"/>
+
+                <Button Text="Volt" Clicked="MoveToVoltPage"/>
+
+                <Button Text="Prowler SMG" Clicked="MoveToProwlerPage"/>
+
+                <Button Text="R99" Clicked="MoveToR99Page"/>
+                
+                
+                <Button Text="Charge Rifle" Clicked="MoveChargeRiflePage"/>
+
+                <Button Text="Longbow DMR" Clicked="MoveToLongbowPage"/>
+
+                <Button Text="Sentinel" Clicked="MoveToSentinelPage"/>
+
+                <Button Text="Triple Take" Clicked="MoveToTripleTakePage"/>
+
+                <Button Text="Kraber .50-cal Sniper" Clicked="MoveToKraberPage"/>
+                
+
+                <Button Text="Eva-8 Auto" Clicked="MoveToEva8Page"/>
+
+                <Button Text="Mastiff" Clicked="MoveToMastiffPage"/>
+
+                
+                <Button Text="Mozambique Shotgun" Clicked="MoveToMozambiquePage"/>
+                
+                <Button Text="P2020" Clicked="MoveToP2020Page"/>
+
+                <Button Text="Wingman" Clicked="MoveToWingmanPage"/>
+
+                <Button Text="Re-45" Clicked="MoveToRe45Page"/>
 
             </StackLayout>
         </ScrollView>
