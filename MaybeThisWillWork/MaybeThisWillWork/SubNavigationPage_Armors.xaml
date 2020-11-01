@@ -20,6 +20,16 @@
 
                 <Button Text="Helmet Level 4" Clicked="MoveToHelmetLv4Subpage" />
 
+                <Button Text="Armor Level 1" Clicked="MoveToArmorLv1Subpage" />
+
+                <Button Text="Armor Level 2" Clicked="MoveToArmorLv2Subpage" />
+
+                <Button Text="Armor Level 3" Clicked="MoveToArmorLv3Subpage" />
+
+                <Button Text="Armor Level 4" Clicked="MoveToArmorLv4Subpage" />
+
+                <Button Text="Armor Level 5" Clicked="MoveToArmorLv5Subpage" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

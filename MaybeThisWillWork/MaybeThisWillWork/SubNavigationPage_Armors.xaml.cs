@@ -37,5 +37,30 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new DefensiveGear_Pages.HelmetLv4());
         }
+
+        private async void MoveToArmorLv1Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.ArmorLv1());
+        }
+
+        private async void MoveToArmorLv2Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.Armor2());
+        }
+
+        private async void MoveToArmorLv3Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.ArmorLv3());
+        }
+
+        private async void MoveToArmorLv4Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.ArmorLv4());
+        }
+
+        private async void MoveToArmorLv5Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.ArmorLv5());
+        }
     }
 }

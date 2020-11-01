@@ -110,6 +110,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>KnockdownShieldLv4.resx</DependentUpon>
     </Compile>
+    <Compile Update="DefensiveGear_Pages\ArmorLv2.xaml.cs">
+      <DependentUpon>ArmorLv2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -303,6 +306,21 @@
     <EmbeddedResource Update="DefensiveGear_Data\KnockdownShieldLv4.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>KnockdownShieldLv4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Pages\HelmetLv1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
