@@ -85,6 +85,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>LifelineData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Characters_Data\PathfinderData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PathfinderData.resx</DependentUpon>
+    </Compile>
     <Compile Update="DefensiveGear_Data\HelmetLv1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -304,6 +309,10 @@
     <EmbeddedResource Update="Characters_Data\LifelineData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LifelineData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\PathfinderData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PathfinderData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\HelmetLv1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
