@@ -70,20 +70,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>BackpackLv4.resx</DependentUpon>
     </Compile>
-    <Compile Update="DefensiveGear_Data\Characters_Data\BloodhoundData.Designer.cs">
+    <Compile Update="Characters_Data\BloodhoundData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>BloodhoundData.resx</DependentUpon>
     </Compile>
-    <Compile Update="DefensiveGear_Data\Characters_Data\GibraltarData.Designer.cs">
+    <Compile Update="Characters_Data\GibraltarData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>GibraltarData.resx</DependentUpon>
     </Compile>
-    <Compile Update="DefensiveGear_Data\Characters_Data\LifelineData.Designer.cs">
+    <Compile Update="Characters_Data\LifelineData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>LifelineData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\PathfinderData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PathfinderData.resx</DependentUpon>
     </Compile>
     <Compile Update="DefensiveGear_Data\HelmetLv1.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -287,17 +292,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BackpackLv4.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="DefensiveGear_Data\Characters_Data\BloodhoundData.resx">
+    <EmbeddedResource Update="Characters_Data\BloodhoundData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BloodhoundData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="DefensiveGear_Data\Characters_Data\GibraltarData.resx">
+    <EmbeddedResource Update="Characters_Data\GibraltarData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GibraltarData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="DefensiveGear_Data\Characters_Data\LifelineData.resx">
+    <EmbeddedResource Update="Characters_Data\LifelineData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LifelineData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\PathfinderData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PathfinderData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\HelmetLv1.resx">
       <Generator>ResXFileCodeGenerator</Generator>

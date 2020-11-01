@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork.DefensiveGear_Data {
+namespace MaybeThisWillWork.Characters_Data {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ArmorLv3 {
+    internal class LifelineData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ArmorLv3() {
+        internal LifelineData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.ArmorLv3", typeof(ArmorLv3).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.LifelineData", typeof(LifelineData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,38 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 100.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 105%.
         /// </summary>
-        internal static string ArmorPoints {
+        internal static string DamageReceiving {
             get {
-                return ResourceManager.GetString("ArmorPoints", resourceCulture);
+                return ResourceManager.GetString("DamageReceiving", resourceCulture);
             }
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 500.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Reviving is making by drone that create shield and leave user free to perform other actions.
         /// </summary>
-        internal static string NextStageReq {
+        internal static string Passive {
             get {
-                return ResourceManager.GetString("NextStageReq", resourceCulture);
+                return ResourceManager.GetString("Passive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls healing drone that heals everyone being in healing range.
+        /// </summary>
+        internal static string Tactical {
+            get {
+                return ResourceManager.GetString("Tactical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls care package.
+        /// </summary>
+        internal static string Ultimate {
+            get {
+                return ResourceManager.GetString("Ultimate", resourceCulture);
             }
         }
     }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
+namespace MaybeThisWillWork.Characters_Data {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.Characters_Data.GibraltarData", typeof(GibraltarData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.GibraltarData", typeof(GibraltarData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
