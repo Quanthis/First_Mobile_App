@@ -120,4 +120,7 @@
   <data name="ArmorPoints" xml:space="preserve">
     <value>50</value>
   </data>
+  <data name="NextStageReq" xml:space="preserve">
+    <value>125</value>
+  </data>
 </root>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork.DefensiveGear_Data {
+namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ArmorLv2 {
+    internal class GibraltarData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ArmorLv2() {
+        internal GibraltarData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.ArmorLv2", typeof(ArmorLv2).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.Characters_Data.GibraltarData", typeof(GibraltarData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,47 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 75.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Being shooted won&apos;t slow down user .
         /// </summary>
-        internal static string ArmorPoints {
+        internal static string Additional {
             get {
-                return ResourceManager.GetString("ArmorPoints", resourceCulture);
+                return ResourceManager.GetString("Additional", resourceCulture);
             }
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 250.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 85%.
         /// </summary>
-        internal static string NextStageReq {
+        internal static string DamageReceiving {
             get {
-                return ResourceManager.GetString("NextStageReq", resourceCulture);
+                return ResourceManager.GetString("DamageReceiving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Create self protecting shield while aiming.
+        /// </summary>
+        internal static string Passive {
+            get {
+                return ResourceManager.GetString("Passive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places doom that blocks shots and granades. Healing time shorten by 15%.
+        /// </summary>
+        internal static string Tactical {
+            get {
+                return ResourceManager.GetString("Tactical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls air attack that deals significant damage.
+        /// </summary>
+        internal static string Ultimate {
+            get {
+                return ResourceManager.GetString("Ultimate", resourceCulture);
             }
         }
     }

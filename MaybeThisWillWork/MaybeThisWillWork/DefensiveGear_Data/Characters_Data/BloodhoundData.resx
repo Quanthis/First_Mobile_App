@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ArmorPoints" xml:space="preserve">
-    <value>100</value>
+  <data name="Additional" xml:space="preserve">
+    <value>Makes Survey Beacons able to scan for next ring location</value>
   </data>
-  <data name="NextStageReq" xml:space="preserve">
-    <value>500</value>
+  <data name="DamageReceiving" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="Passive" xml:space="preserve">
+    <value>Allow user to see enemy tracks</value>
+  </data>
+  <data name="Tactical" xml:space="preserve">
+    <value>Scans for enemies and trapes in front of user, ignores walls</value>
+  </data>
+  <data name="Ultimate" xml:space="preserve">
+    <value>Makes enemies red - colored, increase speed. Allow user too see track with distance. Knockdowns extends time duration</value>
   </data>
 </root>

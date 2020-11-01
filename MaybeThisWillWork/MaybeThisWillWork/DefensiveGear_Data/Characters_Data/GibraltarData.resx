@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ArmorPoints" xml:space="preserve">
-    <value>100</value>
+  <data name="Additional" xml:space="preserve">
+    <value>Being shooted won't slow down user </value>
   </data>
-  <data name="NextStageReq" xml:space="preserve">
-    <value>500</value>
+  <data name="DamageReceiving" xml:space="preserve">
+    <value>85%</value>
+  </data>
+  <data name="Passive" xml:space="preserve">
+    <value>Create self protecting shield while aiming</value>
+  </data>
+  <data name="Tactical" xml:space="preserve">
+    <value>Places doom that blocks shots and granades. Healing time shorten by 15%</value>
+  </data>
+  <data name="Ultimate" xml:space="preserve">
+    <value>Calls air attack that deals significant damage</value>
   </data>
 </root>
