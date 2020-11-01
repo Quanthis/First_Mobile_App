@@ -25,6 +25,51 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="DefensiveGear_Data\ArmorLv1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArmorLv1.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\ArmorLv2.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArmorLv2.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\ArmorLv3.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArmorLv3.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\ArmorLv4.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArmorLv4.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\ArmorLv5.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArmorLv5.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\BackpackLv1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackpackLv1.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\BackpackLv2.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackpackLv2.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\BackpackLv3.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackpackLv3.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\BackpackLv4.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackpackLv4.resx</DependentUpon>
+    </Compile>
     <Compile Update="DefensiveGear_Data\HelmetLv1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -44,6 +89,26 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>HelmetLv4.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\KnockdownShieldLv1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>KnockdownShieldLv1.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\KnockdownShieldLv2.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>KnockdownShieldLv2.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\KnockdownShieldLv3.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>KnockdownShieldLv3.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\KnockdownShieldLv4.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>KnockdownShieldLv4.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
@@ -171,6 +236,42 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="DefensiveGear_Data\ArmorLv1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArmorLv1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\ArmorLv2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArmorLv2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\ArmorLv3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArmorLv3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\ArmorLv4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArmorLv4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\ArmorLv5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArmorLv5.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\BackpackLv1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackpackLv1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\BackpackLv2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackpackLv2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\BackpackLv3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackpackLv3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\BackpackLv4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackpackLv4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\HelmetLv1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>HelmetLv1.Designer.cs</LastGenOutput>
@@ -186,6 +287,22 @@
     <EmbeddedResource Update="DefensiveGear_Data\HelmetLv4.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>HelmetLv4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\KnockdownShieldLv1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KnockdownShieldLv1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\KnockdownShieldLv2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KnockdownShieldLv2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\KnockdownShieldLv3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KnockdownShieldLv3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\KnockdownShieldLv4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>KnockdownShieldLv4.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Pages\HelmetLv1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
