@@ -62,5 +62,45 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new DefensiveGear_Pages.ArmorLv5());
         }
+
+        private async void MoveToKnockdownShieldLv1Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.KnockdownShieldLv1());
+        }
+
+        private async void MoveToKnockdownShieldLv2Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.KnockDownShieldLv2());
+        }
+
+        private async void MoveToKnockdownShieldLv3Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.KnockdownShieldLv3());
+        }
+
+        private async void MoveToKnockdownShieldLv4Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.KnockdownShieldLv4());
+        }
+
+        private async void MoveToBackpackLv1Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.Backpack());
+        }
+
+        private async void MoveToBackpackLv2Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.BackpackLv2());
+        }
+
+        private async void MoveToBackpackLv3Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.BackpackLv3());
+        }
+
+        private async void MoveToBackpackLv4Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DefensiveGear_Pages.BackpackLv4());
+        }
     }
 }

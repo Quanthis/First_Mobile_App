@@ -12,6 +12,8 @@
         <ScrollView>
             <StackLayout x:Name="PageContent">
 
+                <Image Source="ArmorLv5.PNG" />
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

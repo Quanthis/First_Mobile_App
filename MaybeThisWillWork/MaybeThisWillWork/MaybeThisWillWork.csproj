@@ -113,6 +113,9 @@
     <Compile Update="DefensiveGear_Pages\ArmorLv2.xaml.cs">
       <DependentUpon>ArmorLv2.xaml</DependentUpon>
     </Compile>
+    <Compile Update="DefensiveGear_Pages\BackpackLv1.xaml.cs">
+      <DependentUpon>BackpackLv1.xaml</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -322,6 +325,18 @@
     <EmbeddedResource Update="DefensiveGear_Pages\ArmorLv5.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\BackpackLv1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\BackpackLv2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\BackpackLv3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\BackpackLv4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Pages\HelmetLv1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -332,6 +347,18 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Pages\HelmetLv4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\KnockdownShieldLv1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\KnockDownShieldLv2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\KnockdownShieldLv3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\KnockdownShieldLv4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">

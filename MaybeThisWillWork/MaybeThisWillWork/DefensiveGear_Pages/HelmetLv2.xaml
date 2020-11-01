@@ -11,8 +11,11 @@
     <ContentPage.Content>
         <StackLayout x:Name="Content">
 
-            
-            
+
+            <Image Source="HelmetLv2.PNG" />
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

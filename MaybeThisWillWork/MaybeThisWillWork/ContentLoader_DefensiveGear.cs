@@ -77,10 +77,6 @@ namespace MaybeThisWillWork
                             result = FillHelmets(true, fullPath, result);
 
                             return result;
-
-
-
-                        default: break;
                     }
                     break;
 
@@ -130,6 +126,82 @@ namespace MaybeThisWillWork
                     }
                     break;
 
+                case DefensiveGears.KnockdownShield:
+                    
+                    switch(gearLevel)
+                    {
+                        case GearLevels.Lv1:
+
+                            fullPath = allDefensiveGearsResourcePath + "KnockdownShieldLv1";
+
+                            result = FillKnockdownShields(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv2:
+
+                            fullPath = allDefensiveGearsResourcePath + "KnockdownShieldLv2";
+
+                            result = FillKnockdownShields(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv3:
+
+                            fullPath = allDefensiveGearsResourcePath + "KnockdownShieldLv3";
+
+                            result = FillKnockdownShields(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv4:
+
+                            fullPath = allDefensiveGearsResourcePath + "KnockdownShieldLv4";
+
+                            result = FillKnockdownShields(true, fullPath, result);
+
+                            return result;
+                    }
+                    break;
+
+                case DefensiveGears.Backpack:
+
+                    switch(gearLevel)
+                    {
+                        case GearLevels.Lv1:
+
+                            fullPath = allDefensiveGearsResourcePath + "BackpackLv1";
+
+                            result = FillBackpacks(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv2:
+
+                            fullPath = allDefensiveGearsResourcePath + "BackpackLv2";
+
+                            result = FillBackpacks(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv3:
+
+                            fullPath = allDefensiveGearsResourcePath + "BackpackLv3";
+
+                            result = FillBackpacks(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv4:
+
+                            fullPath = allDefensiveGearsResourcePath + "BackpackLv4";
+
+                            result = FillBackpacks(true, fullPath, result);
+
+                            return result;
+                    }
+                    break;
+
 
 
                 default:
@@ -152,6 +224,114 @@ namespace MaybeThisWillWork
             result.Children.Add(usualProperty2);
 
             return result;
+        }
+
+        #region FillingMethods
+        private StackLayout FillBackpacks(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        {
+            Label usualPropertyTitle;
+            Label usualProperty;
+            Label specialEffect;
+            Label specialEffectTitle;
+
+            if (!hasSpecialEffects)
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                return result;
+            }
+
+            else
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                specialEffectTitle = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[1, 0]
+                };
+                result.Children.Add(SetLabelProperties(specialEffectTitle));
+
+                specialEffect = new Label
+                {
+                    Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[1, 1]
+                };
+                result.Children.Add(SetLabelProperties(specialEffect));
+
+                return result;
+            }
+        }
+
+        private StackLayout FillKnockdownShields(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        {
+            Label usualPropertyTitle;
+            Label usualProperty;
+            Label specialEffect;
+            Label specialEffectTitle;
+
+            if(!hasSpecialEffects)
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                return result;
+            }
+            else
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                specialEffectTitle = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[1, 0]
+                };
+                result.Children.Add(SetLabelProperties(specialEffectTitle));
+
+                specialEffect = new Label
+                {
+                    Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[1, 1]
+                };
+                result.Children.Add(SetLabelProperties(specialEffect));
+
+                return result;
+            }
         }
 
         private StackLayout FillArmors(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
@@ -259,7 +439,9 @@ namespace MaybeThisWillWork
                 return result;
             }
         }
+        #endregion
 
+        #region UImethods
         private Label SetLabelProperties(Label toSet)
         {
             toSet.FontSize = 17;
@@ -269,11 +451,12 @@ namespace MaybeThisWillWork
 
             return toSet;
         }
+        #endregion
 
+        #region CreatingObjects
         private Helmet CreateHelmetFromData(string resourcePath)
         {
             ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
-            //ResourceManager resourceManager = new ResourceManager("MaybeThisWillWork.DefensiveGear_Data.HelmetLv1", Assembly.GetExecutingAssembly());
 
             Helmet result;
 
@@ -313,5 +496,48 @@ namespace MaybeThisWillWork
                 return result;
             }
         }
+
+        private KnockdownShield CreateKnockdownShieldFromData(string resourcePath)
+        {
+            ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
+            KnockdownShield result;
+
+            try
+            {
+                string shieldPoints = resourceManager.GetString("ShieldPoints");
+                string specialEffect = resourceManager.GetString("SpecialEffects");
+
+                result = new KnockdownShield(shieldPoints, specialEffect);
+                return result;
+            }
+            catch (Exception)
+            {
+                string armorPoints = resourceManager.GetString("ShieldPoints");
+                result = new KnockdownShield(armorPoints);
+                return result;
+            }
+        }
+
+        private Backpack CreateBackpackFromData(string resourcePath)
+        {
+            ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
+            Backpack result;
+
+            try
+            {
+                string additionalSlots = resourceManager.GetString("ShieldPoints");
+                string specialEffect = resourceManager.GetString("SpecialEffects");
+
+                result = new Backpack(additionalSlots, specialEffect);
+                return result;
+            }
+            catch (Exception)
+            {
+                string additionalSlots = resourceManager.GetString("ShieldPoints");
+                result = new Backpack(additionalSlots);
+                return result;
+            }
+        }
+        #endregion
     }
 }

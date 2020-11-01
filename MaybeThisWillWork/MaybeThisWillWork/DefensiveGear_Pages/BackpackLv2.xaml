@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.DefensiveGear_Pages.ArmorLv3"
-            BackgroundImageSource="Background.png">
+             x:Class="MaybeThisWillWork.DefensiveGear_Pages.BackpackLv2"
+              BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
-        <Label Text="Armor Level 3" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Backpack Level 2" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="PageContent">
 
-                <Image Source="ArmorLv3.PNG" />
-                
+                <Image Source="BackpackLv2.PNG" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

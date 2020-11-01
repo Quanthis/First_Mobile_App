@@ -30,6 +30,22 @@
 
                 <Button Text="Armor Level 5" Clicked="MoveToArmorLv5Subpage" />
 
+                <Button Text="Knockdown Shield Level 1" Clicked="MoveToKnockdownShieldLv1Subpage" />
+
+                <Button Text="Knockdown Shield Level 2" Clicked="MoveToKnockdownShieldLv2Subpage" />
+
+                <Button Text="Knockdown Shield Level 3" Clicked="MoveToKnockdownShieldLv3Subpage" />
+
+                <Button Text="Knockdown Shield Level 4" Clicked="MoveToKnockdownShieldLv4Subpage" />
+
+                <Button Text="Backpack Level 1" Clicked="MoveToBackpackLv1Subpage" />
+
+                <Button Text="Backpack Level 2" Clicked="MoveToBackpackLv2Subpage" />
+
+                <Button Text="Backpack Level 3" Clicked="MoveToBackpackLv3Subpage" />
+
+                <Button Text="Backpack Level 4" Clicked="MoveToBackpackLv4Subpage" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
