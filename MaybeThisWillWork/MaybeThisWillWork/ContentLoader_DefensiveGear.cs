@@ -20,7 +20,8 @@ namespace MaybeThisWillWork
             Lv1,
             Lv2,
             Lv3,
-            Lv4
+            Lv4,
+            Lv5
         };
 
         private DefensiveGears gearType;
@@ -36,7 +37,7 @@ namespace MaybeThisWillWork
         {
             result.Margin = 20;
 
-            string allWeaponsResourcePath = "MaybeThisWillWork.DefensiveGear_Data.";
+            string allDefensiveGearsResourcePath = "MaybeThisWillWork.DefensiveGear_Data.";
             string fullPath;
 
             switch (gearType)
@@ -47,7 +48,7 @@ namespace MaybeThisWillWork
                     {
                         case GearLevels.Lv1:
 
-                            fullPath = allWeaponsResourcePath + "HelmetLv1";
+                            fullPath = allDefensiveGearsResourcePath + "HelmetLv1";
 
                             result = FillHelmets(false, fullPath, result);                            
 
@@ -55,7 +56,7 @@ namespace MaybeThisWillWork
 
                         case GearLevels.Lv2:
 
-                            fullPath = allWeaponsResourcePath + "HelmetLv2";
+                            fullPath = allDefensiveGearsResourcePath + "HelmetLv2";
 
                             result = FillHelmets(false, fullPath, result);
 
@@ -63,7 +64,7 @@ namespace MaybeThisWillWork
 
                         case GearLevels.Lv3:
 
-                            fullPath = allWeaponsResourcePath + "HelmetLv3";
+                            fullPath = allDefensiveGearsResourcePath + "HelmetLv3";
 
                             result = FillHelmets(false, fullPath, result);
 
@@ -71,7 +72,7 @@ namespace MaybeThisWillWork
 
                         case GearLevels.Lv4:
 
-                            fullPath = allWeaponsResourcePath + "HelmetLv4";
+                            fullPath = allDefensiveGearsResourcePath + "HelmetLv4";
 
                             result = FillHelmets(true, fullPath, result);
 
@@ -81,10 +82,53 @@ namespace MaybeThisWillWork
 
                         default: break;
                     }
-
                     break;
 
-                    
+                case DefensiveGears.Armor:
+
+                    switch(gearLevel)
+                    {
+                        case GearLevels.Lv1:
+
+                            fullPath = allDefensiveGearsResourcePath + "ArmorLv1";
+
+                            result = FillArmors(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv2:
+
+                            fullPath = allDefensiveGearsResourcePath + "ArmorLv2";
+
+                            result = FillArmors(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv3:
+
+                            fullPath = allDefensiveGearsResourcePath + "ArmorLv3";
+
+                            result = FillArmors(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv4:
+
+                            fullPath = allDefensiveGearsResourcePath + "ArmorLv4";
+
+                            result = FillArmors(true, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv5:
+
+                            fullPath = allDefensiveGearsResourcePath + "ArmorLv5";
+
+                            result = FillArmors(false, fullPath, result);
+
+                            return result;
+                    }
+                    break;
 
 
 
@@ -108,6 +152,59 @@ namespace MaybeThisWillWork
             result.Children.Add(usualProperty2);
 
             return result;
+        }
+
+        private StackLayout FillArmors(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        {
+            Label usualPropertyTitle;
+            Label usualProperty;
+            Label specialEffect;
+            Label specialEffectTitle;
+
+            if(!hasSpecialEffects)
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(usualPropertyTitle);
+
+                usualProperty = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(usualProperty);
+
+                return result;
+            }
+            else
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(usualPropertyTitle);
+
+                usualProperty = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(usualProperty);
+
+                specialEffectTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(specialEffectTitle);
+
+                specialEffect = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 1]
+                };
+                result.Children.Add(specialEffect);
+
+                return result;
+            }
         }
 
         private StackLayout FillHelmets(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
@@ -192,6 +289,27 @@ namespace MaybeThisWillWork
             {
                 string headshotReduction = resourceManager.GetString("HeadshotRed");
                 result = new Helmet(headshotReduction);
+                return result;
+            }
+        }
+
+        private Armor CreateArmorFromData(string resourcePath)
+        {
+            ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
+            Armor result;
+
+            try
+            {
+                string armorPoints = resourceManager.GetString("ArmorPoints");
+                string specialEffect = resourceManager.GetString("SpecialEffects");
+
+                result = new Armor(armorPoints, specialEffect);
+                return result;
+            }
+            catch (Exception)
+            {
+                string armorPoints = resourceManager.GetString("ArmorPoints");
+                result = new Armor(armorPoints);
                 return result;
             }
         }
