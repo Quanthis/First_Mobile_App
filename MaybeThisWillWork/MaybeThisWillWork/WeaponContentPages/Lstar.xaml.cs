@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Lstar()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.LSTAR);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.LSTAR);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

@@ -12,6 +12,7 @@
         <StackLayout Margin="20">
 
             <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" />
+            <Button Text="Defensive Gear" Clicked="MoveToDefensiveSubpage" />
 
         </StackLayout>
     </ScrollView>

@@ -25,6 +25,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="DefensiveGear_Data\HelmetLv1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HelmetLv1.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\HelmetLv2.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HelmetLv2.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\HelmetLv3.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HelmetLv3.resx</DependentUpon>
+    </Compile>
+    <Compile Update="DefensiveGear_Data\HelmetLv4.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HelmetLv4.resx</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -151,6 +171,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="DefensiveGear_Data\HelmetLv1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelmetLv1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\HelmetLv2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelmetLv2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\HelmetLv3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelmetLv3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Data\HelmetLv4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelmetLv4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DefensiveGear_Pages\HelmetLv1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\Eva8.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

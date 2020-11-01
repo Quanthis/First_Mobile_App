@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Longbow()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Longbow);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Longbow);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

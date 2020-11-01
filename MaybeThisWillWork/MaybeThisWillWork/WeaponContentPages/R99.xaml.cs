@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public R99()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.R99);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.R99);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

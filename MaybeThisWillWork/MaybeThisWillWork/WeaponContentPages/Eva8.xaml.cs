@@ -15,7 +15,7 @@ namespace MaybeThisWillWork
         public Eva8()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Eva8);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Eva8);
             Eva8Info.Children.Add(content.Fill());
         }
     }

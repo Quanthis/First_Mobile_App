@@ -18,7 +18,7 @@ namespace MaybeThisWillWork.WeaponContentPages
             InitializeComponent();
             try
             {
-                ContentLoader content = new ContentLoader(ContentLoader.Weapons.Wingman);
+                ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Wingman);
                 WeaponInfo.Children.Add(content.Fill());
             }
             catch(Exception)

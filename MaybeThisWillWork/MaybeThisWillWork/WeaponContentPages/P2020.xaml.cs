@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public P2020()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.P2020);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.P2020);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

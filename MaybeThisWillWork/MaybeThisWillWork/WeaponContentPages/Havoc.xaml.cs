@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Havoc()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Havoc);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Havoc);
             HavocInfo.Children.Add(content.Fill());
         }
     }

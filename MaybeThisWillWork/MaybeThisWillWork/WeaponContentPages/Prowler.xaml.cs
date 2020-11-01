@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Prowler()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Prowler);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Prowler);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

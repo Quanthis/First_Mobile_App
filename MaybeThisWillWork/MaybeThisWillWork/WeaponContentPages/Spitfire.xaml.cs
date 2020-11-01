@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Spitfire()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Spitfire);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Spitfire);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

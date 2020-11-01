@@ -33,10 +33,6 @@ namespace MaybeThisWillWork
 
         public string ReturnValue()
         {
-            string toPad = " ";
-            char padSign = ' ';
-            ushort numberOfPads = 40;
-
             StringBuilder builder = new StringBuilder("\n");
             builder.AppendLine("Weapon Type: " + type.ToString());
             builder.AppendLine("Used ammo: " + ammoType.ToString());

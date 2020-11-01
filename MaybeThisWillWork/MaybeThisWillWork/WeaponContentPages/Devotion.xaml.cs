@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Devotion()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Devotion);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Devotion);
             DevotionInfo.Children.Add(content.Fill());
         }
     }

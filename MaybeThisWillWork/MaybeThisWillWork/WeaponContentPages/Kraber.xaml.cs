@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Kraber()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Kraber);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Kraber);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

@@ -19,5 +19,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Weapons());
         }
+
+        private async void MoveToDefensiveSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Armors());
+        }
     }
 }

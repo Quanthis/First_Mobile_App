@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public ChargeRifle()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.ChargeRifle);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.ChargeRifle);
             ChargeRifleInfo.Children.Add(content.Fill());
         }
     }

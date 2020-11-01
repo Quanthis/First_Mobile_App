@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Sentinel()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Sentinel);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Sentinel);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

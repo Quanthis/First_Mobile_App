@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MaybeThisWillWork.WeaponContentPages
+namespace MaybeThisWillWork
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class G7Scout : ContentPage
+    public partial class SubNavigationPage_Armors : ContentPage
     {
-        public G7Scout()
+        public SubNavigationPage_Armors()
         {
             InitializeComponent();
-            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.G7Scout);
-            G7ScoutInfo.Children.Add(content.Fill());
         }
     }
 }

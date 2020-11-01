@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public TripleTakexaml()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.TripleTake);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.TripleTake);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

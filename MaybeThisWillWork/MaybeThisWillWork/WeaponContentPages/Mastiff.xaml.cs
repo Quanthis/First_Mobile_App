@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Mastiff()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Mastiff);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Mastiff);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

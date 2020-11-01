@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Volt()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Volt);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Volt);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

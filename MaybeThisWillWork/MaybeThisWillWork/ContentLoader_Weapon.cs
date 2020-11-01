@@ -11,7 +11,7 @@ using static System.Convert;
 
 namespace MaybeThisWillWork
 {
-    public class ContentLoader
+    public class ContentLoader_Weapon
     {
         #region Weapons
         public enum Weapons
@@ -50,7 +50,7 @@ namespace MaybeThisWillWork
 
         Weapons weapon;
 
-        public ContentLoader(Weapons weaponName)
+        public ContentLoader_Weapon(Weapons weaponName)
         {
             weapon = weaponName;
         }

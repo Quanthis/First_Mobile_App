@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Peacekeeper()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Peacekeeper);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Peacekeeper);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

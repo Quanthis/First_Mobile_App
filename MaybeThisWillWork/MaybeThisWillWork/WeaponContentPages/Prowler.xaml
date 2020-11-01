@@ -5,7 +5,7 @@
              BackgroundImageSource="Background.png">
     
     <NavigationPage.TitleView>
-        <Label Text="Prowler Burst PDW SMG" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Prowler Burst PDW" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>

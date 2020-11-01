@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Alternator()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Alternator);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Alternator);
             AlternatorInfo.Children.Add(content.Fill());
         }
     }

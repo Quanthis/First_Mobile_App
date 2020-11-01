@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Hemlok()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Hemlok);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Hemlok);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

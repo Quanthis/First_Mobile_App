@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Re45()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Re45);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Re45);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

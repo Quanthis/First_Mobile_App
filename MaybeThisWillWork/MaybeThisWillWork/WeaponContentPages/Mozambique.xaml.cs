@@ -15,7 +15,7 @@ namespace MaybeThisWillWork.WeaponContentPages
         public Mozambique()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Mozambique);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Mozambique);
             WeaponInfo.Children.Add(content.Fill());
         }
     }

@@ -15,7 +15,7 @@ namespace MaybeThisWillWork
         public Flatline()
         {
             InitializeComponent();
-            ContentLoader content = new ContentLoader(ContentLoader.Weapons.Flatline);
+            ContentLoader_Weapon content = new ContentLoader_Weapon(ContentLoader_Weapon.Weapons.Flatline);
             FlatlineInfo.Children.Add(content.Fill());
         }
     }
