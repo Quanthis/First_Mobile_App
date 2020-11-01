@@ -15,49 +15,151 @@ namespace MaybeThisWillWork
             Backpack
         };
 
-        private DefensiveGears gearType;
+        public enum GearLevels
+        {
+            Lv1,
+            Lv2,
+            Lv3,
+            Lv4
+        };
 
-        public ContentLoader_DefensiveGear(DefensiveGears type)
+        private DefensiveGears gearType;
+        private GearLevels gearLevel;
+
+        public ContentLoader_DefensiveGear(DefensiveGears type, GearLevels gearLevel)
         {
             gearType = type;
+            this.gearLevel = gearLevel;
         }
 
-        public StackLayout Fill()
+        public StackLayout Fill(StackLayout result)
         {
-            StackLayout result = new StackLayout();
-
-            Label usualPropertyTitle;
-            Label usualProperty;
-            Label specialEffect;
-            Label specialEffectTitle;
+            result.Margin = 20;
 
             string allWeaponsResourcePath = "MaybeThisWillWork.DefensiveGear_Data.";
             string fullPath;
-            string weaponFile;
 
             switch (gearType)
             {
                 case DefensiveGears.Helmet:
 
-                    fullPath = allWeaponsResourcePath + "HelmetLv1";
-
-                    usualPropertyTitle = new Label
+                    switch(gearLevel)
                     {
-                        Text = CreateHelmetFromData(fullPath).ReturnValues()[0, 0]
-                    };
+                        case GearLevels.Lv1:
+
+                            fullPath = allWeaponsResourcePath + "HelmetLv1";
+
+                            result = FillHelmets(false, fullPath, result);                            
+
+                            return result;
+
+                        case GearLevels.Lv2:
+
+                            fullPath = allWeaponsResourcePath + "HelmetLv2";
+
+                            result = FillHelmets(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv3:
+
+                            fullPath = allWeaponsResourcePath + "HelmetLv3";
+
+                            result = FillHelmets(false, fullPath, result);
+
+                            return result;
+
+                        case GearLevels.Lv4:
+
+                            fullPath = allWeaponsResourcePath + "HelmetLv4";
+
+                            result = FillHelmets(true, fullPath, result);
+
+                            return result;
 
 
-                    return result;
+
+                        default: break;
+                    }
+
+                    break;
+
+                    
+
+
 
                 default:
 
-                    usualProperty = new Label
+                    var usualProperty = new Label
                     {
                         Text = "Sorry, an error has occured",
                     };
 
                     result.Children.Add(usualProperty);
+
                     return result;
+            }
+
+            var usualProperty2 = new Label
+            {
+                Text = "Sorry, an error has occured",
+            };
+
+            result.Children.Add(usualProperty2);
+
+            return result;
+        }
+
+        private StackLayout FillHelmets(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        {
+            Label usualPropertyTitle;
+            Label usualProperty;
+            Label specialEffect;
+            Label specialEffectTitle;
+
+            if(!hasSpecialEffects)
+            {               
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                return result;
+            }
+            else
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                specialEffectTitle = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[1, 0]
+                };
+                result.Children.Add(SetLabelProperties(specialEffectTitle));
+
+                specialEffect = new Label
+                {
+                    Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[1, 1]
+                };
+                result.Children.Add(SetLabelProperties(specialEffect));
+
+                return result;
             }
         }
 
@@ -74,6 +176,8 @@ namespace MaybeThisWillWork
         private Helmet CreateHelmetFromData(string resourcePath)
         {
             ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
+            //ResourceManager resourceManager = new ResourceManager("MaybeThisWillWork.DefensiveGear_Data.HelmetLv1", Assembly.GetExecutingAssembly());
+
             Helmet result;
 
             try
@@ -81,15 +185,15 @@ namespace MaybeThisWillWork
                 string headshotReduction = resourceManager.GetString("HeadshotRed");
                 string specialEffect = resourceManager.GetString("SpecialEffects");
 
-                result = new Helmet(headshotReduction);
+                result = new Helmet(headshotReduction, specialEffect);
+                return result;
             }
             catch(Exception)
             {
                 string headshotReduction = resourceManager.GetString("HeadshotRed");
                 result = new Helmet(headshotReduction);
+                return result;
             }
-
-            return result;
         }
     }
 }

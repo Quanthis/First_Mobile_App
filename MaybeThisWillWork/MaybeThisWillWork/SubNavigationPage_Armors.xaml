@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.SubNavigationPage_Armors">
+             x:Class="MaybeThisWillWork.SubNavigationPage_Armors"
+             BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
         <Label Text="Defensive Gear" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -9,10 +10,16 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout x:Name="PageLayout">
- 
-                
-                
+            <StackLayout x:Name="PageLayout" Margin="20">
+
+                <Button Text="Helmet Level 1" Clicked="MoveToHelmetLv1Subpage" />
+
+                <Button Text="Helmet Level 2" Clicked="MoveToHelmetLv2Subpage" />
+
+                <Button Text="Helmet Level 3" Clicked="MoveToHelmetLv3Subpage" />
+
+                <Button Text="Helmet Level 4" Clicked="MoveToHelmetLv4Subpage" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
