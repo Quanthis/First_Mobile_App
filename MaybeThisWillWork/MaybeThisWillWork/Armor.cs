@@ -8,6 +8,7 @@ namespace MaybeThisWillWork
     {
         private string armorPoints;
         private string specialEffects = "none";
+        private string damageNeededToEvolve = "0";
 
         public Armor(string armorPoints)
         {
@@ -20,27 +21,62 @@ namespace MaybeThisWillWork
             this.specialEffects = specialEffects;
         }
 
+        public Armor(string armorPoints, string specialEffects, string damageNeededToEvolve) : this(armorPoints, specialEffects)
+        {
+            this.damageNeededToEvolve = damageNeededToEvolve;
+        }
+
         public string[,] ReturnValues()
         {
             if (specialEffects == "not set")
             {
-                string[,] result = new string[1, 2];
+                if (damageNeededToEvolve == "0")
+                {
+                    string[,] result = new string[1, 2];
 
-                result[0, 0] = "Armor health points: ";
-                result[0, 1] = armorPoints;
+                    result[0, 0] = "Armor health points: ";
+                    result[0, 1] = armorPoints;
 
-                return result;
+                    return result;
+                }
+                else
+                {
+                    string[,] result = new string[2, 2];
+
+                    result[0, 0] = "Armor health points: ";
+                    result[0, 1] = armorPoints;
+                    result[1, 0] = "Damage needed to evolve: ";
+                    result[1, 1] = damageNeededToEvolve;
+
+                    return result;
+                }
             }
             else
             {
-                string[,] result = new string[2, 2];
+                if (damageNeededToEvolve == "0")
+                {
+                    string[,] result = new string[2, 2];
 
-                result[0, 0] = "Armor health points: ";
-                result[0, 1] = armorPoints;
-                result[1, 0] = "Special Effects: ";
-                result[1, 1] = specialEffects;
+                    result[0, 0] = "Armor health points: ";
+                    result[0, 1] = armorPoints;
+                    result[1, 0] = "Special Effects: ";
+                    result[1, 1] = specialEffects;
 
-                return result;
+                    return result;
+                }
+                else
+                {
+                    string[,] result = new string[3, 2];
+
+                    result[0, 0] = "Armor health points: ";
+                    result[0, 1] = armorPoints;
+                    result[1, 0] = "Special Effects: ";
+                    result[1, 1] = specialEffects;
+                    result[2, 0] = "Damage needed to evolve: ";
+                    result[2, 1] = damageNeededToEvolve;
+
+                    return result;
+                }
             }
         }
     }

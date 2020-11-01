@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
+namespace MaybeThisWillWork.Characters_Data {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class GibraltarData {
+    internal class LifelineData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal GibraltarData() {
+        internal LifelineData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.Characters_Data.GibraltarData", typeof(GibraltarData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.LifelineData", typeof(LifelineData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,16 +61,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Being shooted won&apos;t slow down user .
-        /// </summary>
-        internal static string Additional {
-            get {
-                return ResourceManager.GetString("Additional", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 85%.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 105%.
         /// </summary>
         internal static string DamageReceiving {
             get {
@@ -79,7 +70,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Create self protecting shield while aiming.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Reviving is making by drone that create shield and leave user free to perform other actions.
         /// </summary>
         internal static string Passive {
             get {
@@ -88,7 +79,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places doom that blocks shots and granades. Healing time shorten by 15%.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls healing drone that heals everyone being in healing range.
         /// </summary>
         internal static string Tactical {
             get {
@@ -97,7 +88,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls air attack that deals significant damage.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls care package.
         /// </summary>
         internal static string Ultimate {
             get {

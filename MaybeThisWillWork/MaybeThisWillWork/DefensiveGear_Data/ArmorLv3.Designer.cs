@@ -68,5 +68,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
                 return ResourceManager.GetString("ArmorPoints", resourceCulture);
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 500.
+        /// </summary>
+        internal static string NextStageReq {
+            get {
+                return ResourceManager.GetString("NextStageReq", resourceCulture);
+            }
+        }
     }
 }

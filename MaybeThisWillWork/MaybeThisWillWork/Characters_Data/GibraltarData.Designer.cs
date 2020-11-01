@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
+namespace MaybeThisWillWork.Characters_Data {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class BloodhoundData {
+    internal class GibraltarData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal BloodhoundData() {
+        internal GibraltarData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.DefensiveGear_Data.Characters_Data.BloodhoundData", typeof(BloodhoundData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.GibraltarData", typeof(GibraltarData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Makes Survey Beacons able to scan for next ring location.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Being shooted won&apos;t slow down user .
         /// </summary>
         internal static string Additional {
             get {
@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 100%.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 85%.
         /// </summary>
         internal static string DamageReceiving {
             get {
@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Allow user to see enemy tracks.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Create self protecting shield while aiming.
         /// </summary>
         internal static string Passive {
             get {
@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Scans for enemies and trapes in front of user, ignores walls.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places doom that blocks shots and granades. Healing time shorten by 15%.
         /// </summary>
         internal static string Tactical {
             get {
@@ -97,7 +97,7 @@ namespace MaybeThisWillWork.DefensiveGear_Data.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Makes enemies red - colored, increase speed. Allow user too see track with distance. Knockdowns extends time duration.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls air attack that deals significant damage.
         /// </summary>
         internal static string Ultimate {
             get {

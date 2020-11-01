@@ -88,7 +88,7 @@ namespace MaybeThisWillWork
 
                             fullPath = allDefensiveGearsResourcePath + "ArmorLv1";
 
-                            result = FillArmors(false, fullPath, result);
+                            result = FillArmors(false, true, fullPath, result);
 
                             return result;
 
@@ -96,7 +96,7 @@ namespace MaybeThisWillWork
 
                             fullPath = allDefensiveGearsResourcePath + "ArmorLv2";
 
-                            result = FillArmors(false, fullPath, result);
+                            result = FillArmors(false, true, fullPath, result);
 
                             return result;
 
@@ -104,7 +104,7 @@ namespace MaybeThisWillWork
 
                             fullPath = allDefensiveGearsResourcePath + "ArmorLv3";
 
-                            result = FillArmors(false, fullPath, result);
+                            result = FillArmors(false, true, fullPath, result);
 
                             return result;
 
@@ -334,14 +334,16 @@ namespace MaybeThisWillWork
             }
         }
 
-        private StackLayout FillArmors(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        private StackLayout FillArmors(bool hasSpecialEffects, bool canEvolve, string fullResourcePath, StackLayout result)
         {
             Label usualPropertyTitle;
             Label usualProperty;
             Label specialEffect;
             Label specialEffectTitle;
+            Label toEvolve;
+            Label toEvolveTitle;
 
-            if(!hasSpecialEffects)
+            if (!hasSpecialEffects)
             {
                 usualPropertyTitle = new Label
                 {
@@ -354,8 +356,6 @@ namespace MaybeThisWillWork
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
                 };
                 result.Children.Add(SetLabelProperties(usualProperty));
-
-                return result;
             }
             else
             {
@@ -382,9 +382,75 @@ namespace MaybeThisWillWork
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 1]
                 };
                 result.Children.Add(SetLabelProperties(specialEffect));
-
-                return result;
             }
+
+            if(canEvolve)
+            {
+                toEvolveTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[2, 0]
+                };
+                result.Children.Add(SetLabelProperties(toEvolveTitle));
+
+                toEvolve = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[2, 1]
+                };
+                result.Children.Add(SetLabelProperties(toEvolve));
+            }
+
+            return result;
+        }
+
+        private StackLayout FillArmors(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
+        {
+            Label usualPropertyTitle;
+            Label usualProperty;
+            Label specialEffect;
+            Label specialEffectTitle;
+
+            if(!hasSpecialEffects)
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+            }
+            else
+            {
+                usualPropertyTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
+                };
+                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+
+                usualProperty = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 1]
+                };
+                result.Children.Add(SetLabelProperties(usualProperty));
+
+                specialEffectTitle = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 0]
+                };
+                result.Children.Add(SetLabelProperties(specialEffectTitle));
+
+                specialEffect = new Label
+                {
+                    Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 1]
+                };
+                result.Children.Add(SetLabelProperties(specialEffect));                
+            }
+
+            return result;
         }
 
         private StackLayout FillHelmets(bool hasSpecialEffects, string fullResourcePath, StackLayout result)
@@ -485,15 +551,36 @@ namespace MaybeThisWillWork
             {
                 string armorPoints = resourceManager.GetString("ArmorPoints");
                 string specialEffect = resourceManager.GetString("SpecialEffects");
+                string toEvolve = resourceManager.GetString("NextStageReq");
 
-                result = new Armor(armorPoints, specialEffect);
+                result = new Armor(armorPoints, specialEffect, toEvolve);
                 return result;
             }
             catch (Exception)
             {
-                string armorPoints = resourceManager.GetString("ArmorPoints");
-                result = new Armor(armorPoints);
-                return result;
+                try
+                {
+                    string armorPoints = resourceManager.GetString("ArmorPoints");
+                    string specialEffect = resourceManager.GetString("SpecialEffects");
+                    result = new Armor(armorPoints, specialEffect);
+                    return result;
+                }
+                catch(Exception)
+                {
+                    try
+                    {
+                        string armorPoints = resourceManager.GetString("ArmorPoints");
+                        string toEvolve = resourceManager.GetString("NextStageReq");
+                        result = new Armor(armorPoints, toEvolve);
+                        return result;
+                    }
+                    catch(Exception)
+                    {
+                        string armorPoints = resourceManager.GetString("ArmorPoints");
+                        result = new Armor(armorPoints);
+                        return result;
+                    }
+                }
             }
         }
 
