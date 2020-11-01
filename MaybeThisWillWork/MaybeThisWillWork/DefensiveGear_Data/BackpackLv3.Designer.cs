@@ -59,5 +59,14 @@ namespace MaybeThisWillWork.DefensiveGear_Data {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 6.
+        /// </summary>
+        internal static string AdditionalSlots {
+            get {
+                return ResourceManager.GetString("AdditionalSlots", resourceCulture);
+            }
+        }
     }
 }
