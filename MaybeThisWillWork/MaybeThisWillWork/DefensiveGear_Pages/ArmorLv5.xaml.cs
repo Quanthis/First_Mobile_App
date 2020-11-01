@@ -10,13 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace MaybeThisWillWork.DefensiveGear_Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HelmetLv1 : ContentPage
+    public partial class ArmorLv5 : ContentPage
     {
-        public HelmetLv1()
+        public ArmorLv5()
         {
             InitializeComponent();
-            ContentLoader_DefensiveGear content = new ContentLoader_DefensiveGear(ContentLoader_DefensiveGear.DefensiveGears.Helmet, ContentLoader_DefensiveGear.GearLevels.Lv1);
-            Content = content.Fill(Content);
+            ContentLoader_DefensiveGear content = new ContentLoader_DefensiveGear(ContentLoader_DefensiveGear.DefensiveGears.Armor, ContentLoader_DefensiveGear.GearLevels.Lv5);
+            PageContent = content.Fill(PageContent);
         }
     }
 }

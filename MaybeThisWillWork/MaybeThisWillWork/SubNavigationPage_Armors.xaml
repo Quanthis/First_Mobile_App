@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.SubNavigationPage_Armors">
+             x:Class="MaybeThisWillWork.SubNavigationPage_Armors"
+             BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
         <Label Text="Defensive Gear" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -9,10 +10,42 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout x:Name="PageLayout">
- 
-                
-                
+            <StackLayout x:Name="PageLayout" Margin="20">
+
+                <Button Text="Helmet Level 1" Clicked="MoveToHelmetLv1Subpage" />
+
+                <Button Text="Helmet Level 2" Clicked="MoveToHelmetLv2Subpage" />
+
+                <Button Text="Helmet Level 3" Clicked="MoveToHelmetLv3Subpage" />
+
+                <Button Text="Helmet Level 4" Clicked="MoveToHelmetLv4Subpage" />
+
+                <Button Text="Armor Level 1" Clicked="MoveToArmorLv1Subpage" />
+
+                <Button Text="Armor Level 2" Clicked="MoveToArmorLv2Subpage" />
+
+                <Button Text="Armor Level 3" Clicked="MoveToArmorLv3Subpage" />
+
+                <Button Text="Armor Level 4" Clicked="MoveToArmorLv4Subpage" />
+
+                <Button Text="Armor Level 5" Clicked="MoveToArmorLv5Subpage" />
+
+                <Button Text="Knockdown Shield Level 1" Clicked="MoveToKnockdownShieldLv1Subpage" />
+
+                <Button Text="Knockdown Shield Level 2" Clicked="MoveToKnockdownShieldLv2Subpage" />
+
+                <Button Text="Knockdown Shield Level 3" Clicked="MoveToKnockdownShieldLv3Subpage" />
+
+                <Button Text="Knockdown Shield Level 4" Clicked="MoveToKnockdownShieldLv4Subpage" />
+
+                <Button Text="Backpack Level 1" Clicked="MoveToBackpackLv1Subpage" />
+
+                <Button Text="Backpack Level 2" Clicked="MoveToBackpackLv2Subpage" />
+
+                <Button Text="Backpack Level 3" Clicked="MoveToBackpackLv3Subpage" />
+
+                <Button Text="Backpack Level 4" Clicked="MoveToBackpackLv4Subpage" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
