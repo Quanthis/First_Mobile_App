@@ -262,6 +262,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CharacterContentPages\Gibraltar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\ArmorLv1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ArmorLv1.Designer.cs</LastGenOutput>
@@ -398,6 +401,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Legends.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\Eva8.xaml">

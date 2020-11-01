@@ -127,6 +127,6 @@
     <value>Calls healing drone that heals everyone being in healing range</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
-    <value>Calls care package</value>
+    <value>Calls Lifeline care package</value>
   </data>
 </root>

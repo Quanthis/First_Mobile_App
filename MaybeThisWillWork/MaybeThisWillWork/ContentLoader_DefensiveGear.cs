@@ -523,7 +523,6 @@ namespace MaybeThisWillWork
         private Helmet CreateHelmetFromData(string resourcePath)
         {
             ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
-
             Helmet result;
 
             try

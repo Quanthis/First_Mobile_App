@@ -5,15 +5,18 @@
              BackgroundImageSource="Background.png">
     
     <NavigationPage.TitleView>
-        <Label Text="Apex Legends Gear Guide" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Apex Legends Guide" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ScrollView>
         <StackLayout Margin="20">
 
             <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" />
+            
             <Button Text="Defensive Gear" Clicked="MoveToDefensiveSubpage" />
 
+            <Button Text="Legends" Clicked="MoveToLegendsSubpage" />
+            
         </StackLayout>
     </ScrollView>
 

@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls care package.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Calls Lifeline care package.
         /// </summary>
         internal static string Ultimate {
             get {

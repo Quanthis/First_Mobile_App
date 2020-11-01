@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Makes Survey Beacons able to scan for next ring location.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Can use survey beacon.
         /// </summary>
         internal static string Additional {
             get {

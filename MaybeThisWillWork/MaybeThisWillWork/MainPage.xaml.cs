@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaybeThisWillWork.CharacterContentPages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -23,6 +24,11 @@ namespace MaybeThisWillWork
         private async void MoveToDefensiveSubpage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SubNavigationPage_Armors());
+        }
+
+        private async void MoveToLegendsSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Legends());
         }
     }
 }
