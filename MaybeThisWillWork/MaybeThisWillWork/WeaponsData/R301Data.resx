@@ -130,7 +130,7 @@
     <value>11</value>
   </data>
   <data name="MagazineSize" xml:space="preserve">
-    <value>18</value>
+    <value>18 / 20 / 25 / 28</value>
   </data>
   <data name="MovementSpeedCut" xml:space="preserve">
     <value>10%</value>

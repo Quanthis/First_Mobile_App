@@ -11,10 +11,10 @@ namespace MaybeThisWillWork
         private int headDamage;
         private int legDamage;
         private string movementSpeedCut;
-        private int magazineSize;
+        private string magazineSizes;
         private int rateOfFire;
 
-        public Weapon(string type, string ammoType, int damage, int headDamage, int legDamage, string movementSpeedCut, int magazineSize, int rateOfFire)
+        public Weapon(string type, string ammoType, int damage, int headDamage, int legDamage, string movementSpeedCut, string magazineSizes, int rateOfFire)
         {
             this.type = type;
             this.ammoType = ammoType;
@@ -22,7 +22,7 @@ namespace MaybeThisWillWork
             this.headDamage = headDamage;
             this.legDamage = legDamage;
             this.movementSpeedCut = movementSpeedCut;
-            this.magazineSize = magazineSize;
+            this.magazineSizes = magazineSizes;
             this.rateOfFire = rateOfFire;
         }
 
@@ -40,8 +40,8 @@ namespace MaybeThisWillWork
             builder.AppendLine("Headshot damange: " + headDamage.ToString());
             builder.AppendLine("Leg damage: " + legDamage.ToString());
             builder.AppendLine("Movement speed slowdown: " + movementSpeedCut.ToString());
-            builder.AppendLine("Base magazine size: " + magazineSize.ToString());
-            builder.AppendLine("Rate of fire: " + rateOfFire.ToString());
+            builder.AppendLine("Magazine sizes: " + magazineSizes.ToString());
+            builder.AppendLine("Rate of fire [RPM]: " + rateOfFire.ToString());
 
             return builder.ToString();
         }

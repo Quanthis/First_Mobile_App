@@ -313,10 +313,10 @@ namespace MaybeThisWillWork
             int headDamage = ToInt32(resourceManager.GetString("HeadDamage"));
             int legDamage = ToInt32(resourceManager.GetString("LegDamage"));
             string movementSpeedCut = resourceManager.GetString("MovementSpeedCut");
-            int magazineSize = ToInt32(resourceManager.GetString("MagazineSize"));
+            string magazineSizes = resourceManager.GetString("MagazineSize");
             int rateOfFire = ToInt32(resourceManager.GetString("RateOfFire"));
 
-            Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSize, rateOfFire);
+            Weapon result = new Weapon(type, ammoType, damage, headDamage, legDamage, movementSpeedCut, magazineSizes, rateOfFire);
             Debug.WriteLine(result.ReturnValue());
 
             return result;

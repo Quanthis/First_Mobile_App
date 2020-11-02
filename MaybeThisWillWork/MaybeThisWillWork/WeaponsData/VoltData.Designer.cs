@@ -97,7 +97,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 19.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 19 / 21 / 23 / 26.
         /// </summary>
         internal static string MagazineSize {
             get {
