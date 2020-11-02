@@ -13,6 +13,10 @@
 
             <Button Text="Gibraltar" Clicked="MoveToGibraltarSubpage" />
 
+            <Button Text="Bloodhound" Clicked="MoveToBloodhoundSubpage" />
+
+            <Button Text="Lifeline" Clicked="MoveToLifelineSubpage" />
+
         </StackLayout>
     </ScrollView>
 </ContentPage>

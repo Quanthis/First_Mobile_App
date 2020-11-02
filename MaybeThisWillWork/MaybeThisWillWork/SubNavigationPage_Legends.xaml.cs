@@ -22,5 +22,15 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new Gibraltar());
         }
+
+        private async void MoveToBloodhoundSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Bloodhound());
+        }
+
+        private async void MoveToLifelineSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lifeline());
+        }
     }
 }

@@ -51,7 +51,21 @@ namespace MaybeThisWillWork
 
                     return result;
 
+                case Characters.Bloodhound:
 
+                    fullPath = allDefensiveGearsResourcePath + "BloodhoundData";
+
+                    result = FillCharacter(result, fullPath, true);
+
+                    return result;
+
+                case Characters.Lifeline:
+
+                    fullPath = allDefensiveGearsResourcePath + "LifelineData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
 
 
                 default:

@@ -262,7 +262,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CharacterContentPages\Bloodhound.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="CharacterContentPages\Gibraltar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Lifeline.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\ArmorLv1.resx">

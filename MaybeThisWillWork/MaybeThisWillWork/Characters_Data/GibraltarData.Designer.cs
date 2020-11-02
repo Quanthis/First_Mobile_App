@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Being shooted won&apos;t slow down user .
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Being shooted does not impact movement speed.
         /// </summary>
         internal static string Additional {
             get {
