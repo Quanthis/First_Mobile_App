@@ -4,6 +4,8 @@ using System.Reflection;
 using System.Resources;
 using System.Text;
 using Xamarin.Forms;
+using System.Drawing;
+using Xamarin.Forms.Markup;
 
 namespace MaybeThisWillWork
 {
@@ -167,17 +169,16 @@ namespace MaybeThisWillWork
             return toSet;
         }
 
+        [Obsolete]
         private Label SetTitleLabelProperties(Label toSet)
         {
-            toSet.FontSize = 17;
             toSet.Margin = 3;
             toSet.LineHeight = 1;
             toSet.TextColor = Xamarin.Forms.Color.White;
             toSet.TextType = TextType.Html;
-            
-            toSet.Text.Insert(0, "\n<strong>");
-            int length = toSet.Text.Length;
-            toSet.Text.Insert(length - 1, "</strong>");
+
+            toSet.Font = Font.SystemFontOfSize(17)
+              .WithAttributes(FontAttributes.Bold);
 
             return toSet;
         }

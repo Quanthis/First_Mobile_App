@@ -611,7 +611,7 @@ namespace MaybeThisWillWork
 
             try
             {
-                string additionalSlots = resourceManager.GetString("ShieldPoints");
+                string additionalSlots = resourceManager.GetString("AdditionalSlots");
                 string specialEffect = resourceManager.GetString("SpecialEffects");
 
                 result = new Backpack(additionalSlots, specialEffect);
@@ -619,7 +619,7 @@ namespace MaybeThisWillWork
             }
             catch (Exception)
             {
-                string additionalSlots = resourceManager.GetString("ShieldPoints");
+                string additionalSlots = resourceManager.GetString("AdditionalSlots");
                 result = new Backpack(additionalSlots);
                 return result;
             }
