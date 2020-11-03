@@ -117,19 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Additional" xml:space="preserve">
-    <value>Makes Survey Beacons able to scan for next ring location</value>
-  </data>
   <data name="DamageReceiving" xml:space="preserve">
-    <value>105%</value>
+    <value>100%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Using Survey Beacons reduce Ultimate cooldown by 10s</value>
+    <value>Receiving or being shooten in certain area increases movement speed</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Grapples traveling to another location</value>
+    <value>Uses smoke grenade</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
-    <value>Places zipline </value>
+    <value>Call air attack that erupts after 6 seconds</value>
   </data>
 </root>

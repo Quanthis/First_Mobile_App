@@ -25,6 +25,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Characters_Data\BangaloreData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BangaloreData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\WraithData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WraithData.resx</DependentUpon>
+    </Compile>
     <Compile Update="DefensiveGear_Data\ArmorLv1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -262,6 +272,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Characters_Data\BangaloreData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BangaloreData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\WraithData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WraithData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="DefensiveGear_Data\ArmorLv1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ArmorLv1.Designer.cs</LastGenOutput>
