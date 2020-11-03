@@ -22,14 +22,14 @@ namespace MaybeThisWillWork.Characters_Data {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class PathfinderData {
+    internal class WraithData {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PathfinderData() {
+        internal WraithData() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MaybeThisWillWork.Characters_Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.PathfinderData", typeof(PathfinderData).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MaybeThisWillWork.Characters_Data.WraithData", typeof(WraithData).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,15 +61,6 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Can use survey beacon.
-        /// </summary>
-        internal static string Additional {
-            get {
-                return ResourceManager.GetString("Additional", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu 105%.
         /// </summary>
         internal static string DamageReceiving {
@@ -79,7 +70,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Using Survey Beacons reduce Ultimate cooldown by 10s.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu User hears voice when danger incoming.
         /// </summary>
         internal static string Passive {
             get {
@@ -88,7 +79,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Grapples traveling to another location.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Jumps into the void avoiding damage.
         /// </summary>
         internal static string Tactical {
             get {
@@ -97,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places zipline .
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places Two - doors portal that allow everyone to fast travel between them.
         /// </summary>
         internal static string Ultimate {
             get {

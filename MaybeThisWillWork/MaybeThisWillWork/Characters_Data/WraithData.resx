@@ -117,19 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Additional" xml:space="preserve">
-    <value>Can use survey beacon</value>
-  </data>
   <data name="DamageReceiving" xml:space="preserve">
     <value>105%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Using Survey Beacons reduce Ultimate cooldown by 10s</value>
+    <value>User hears voice when danger incoming</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Grapples traveling to another location</value>
+    <value>Jumps into the void avoiding damage</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
-    <value>Places zipline </value>
+    <value>Places Two - doors portal that allow everyone to fast travel between them</value>
   </data>
 </root>

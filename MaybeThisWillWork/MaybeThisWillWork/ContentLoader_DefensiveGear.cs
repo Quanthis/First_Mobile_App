@@ -466,13 +466,13 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
                     Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 1]
                 };
-                result.Children.Add(SetLabelProperties(usualProperty));
+                result.Children.Add(SetTitleLabelProperties(usualProperty));
 
                 return result;
             }
@@ -482,7 +482,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -494,7 +494,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[1, 0]
                 };
-                result.Children.Add(SetLabelProperties(specialEffectTitle));
+                result.Children.Add(SetTitleLabelProperties(specialEffectTitle));
 
                 specialEffect = new Label
                 {
@@ -514,6 +514,19 @@ namespace MaybeThisWillWork
             toSet.Margin = 3;
             toSet.LineHeight = 2;
             toSet.TextColor = Xamarin.Forms.Color.White;
+
+            return toSet;
+        }
+
+        private Label SetTitleLabelProperties(Label toSet)
+        {
+            toSet.Margin = 3;
+            toSet.LineHeight = 1;
+            toSet.TextColor = Xamarin.Forms.Color.White;
+            toSet.TextType = TextType.Html;
+
+            toSet.Font = Font.SystemFontOfSize(17)
+              .WithAttributes(FontAttributes.Bold);
 
             return toSet;
         }
