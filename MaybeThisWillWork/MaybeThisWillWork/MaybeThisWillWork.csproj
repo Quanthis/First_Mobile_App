@@ -13,6 +13,9 @@
 
   <ItemGroup>
     <None Remove="R301.txt" />
+    <None Remove="Resources\ArcStar.png" />
+    <None Remove="Resources\FragGrenade.png" />
+    <None Remove="Resources\ThermiteGrenade.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +25,13 @@
 
   <ItemGroup>
     <Resource Include="R301.txt" />
+    <Resource Include="Resources\ArcStar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\FragGrenade.png" />
+    <Resource Include="Resources\ThermiteGrenade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -135,6 +145,21 @@
     </Compile>
     <Compile Update="DefensiveGear_Pages\BackpackLv1.xaml.cs">
       <DependentUpon>BackpackLv1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Grenades_Data\ArcStarData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ArcStarData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Grenades_Data\FragGrenadeData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FragGrenadeData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Grenades_Data\ThermiteGrenadaData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ThermiteGrenadaData.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
@@ -262,6 +287,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="GrenadesContentPages\ArcStar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="CharacterContentPages\Bloodhound.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -406,7 +434,28 @@
     <EmbeddedResource Update="DefensiveGear_Pages\KnockdownShieldLv4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="GrenadesContentPages\FragGrenade.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GrenadesContentPages\ThermiteGrenade.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Grenades_Data\ArcStarData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArcStarData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Grenades_Data\FragGrenadeData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FragGrenadeData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Grenades_Data\ThermiteGrenadaData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThermiteGrenadaData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Grenades.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Legends.xaml">

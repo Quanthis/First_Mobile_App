@@ -30,5 +30,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Legends());
         }
+
+        private async void MoveToGrenadesSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Grenades());
+        }
     }
 }

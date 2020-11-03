@@ -16,7 +16,9 @@
             <Button Text="Defensive Gear" Clicked="MoveToDefensiveSubpage" />
 
             <Button Text="Legends" Clicked="MoveToLegendsSubpage" />
-            
+
+            <Button Text="Grenades" Clicked="MoveToGrenadesSubpage" />
+
         </StackLayout>
     </ScrollView>
 

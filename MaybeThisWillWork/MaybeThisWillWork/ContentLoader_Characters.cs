@@ -169,7 +169,6 @@ namespace MaybeThisWillWork
             return toSet;
         }
 
-        [Obsolete]
         private Label SetTitleLabelProperties(Label toSet)
         {
             toSet.Margin = 3;

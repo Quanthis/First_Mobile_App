@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Drawing;
+using Xamarin.Forms;
 
 namespace MaybeThisWillWork
 {
@@ -8,6 +8,14 @@ namespace MaybeThisWillWork
     {
         private string property;
         private string damage;
+        private ImageSource imageSource;
+
+        public Grenade(string property, string damage, ImageSource imageSource)
+        {
+            this.property = property;
+            this.damage = damage;
+            this.imageSource = imageSource;
+        }
 
         public Grenade(string property, string damage)
         {
@@ -25,6 +33,11 @@ namespace MaybeThisWillWork
             result[1, 1] = damage;
 
             return result;
+        }
+
+        public ImageSource GetImageSource()
+        {
+            return imageSource;
         }
     }
 }
