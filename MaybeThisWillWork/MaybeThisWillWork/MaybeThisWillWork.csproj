@@ -171,6 +171,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ThermiteGrenadaData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Hopups_Data\BarrelStabilizerData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BarrelStabilizerData.resx</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -479,10 +484,20 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ThermiteGrenadaData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\BarrelStabilizer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\BarrelStabilizerData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BarrelStabilizerData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Grenades.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Hopups.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Legends.xaml">

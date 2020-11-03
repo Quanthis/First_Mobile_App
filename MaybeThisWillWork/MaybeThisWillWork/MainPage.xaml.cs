@@ -35,5 +35,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Grenades());
         }
+
+        private async void MoveToHopupsSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Hopups());
+        }
     }
 }

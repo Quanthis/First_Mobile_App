@@ -19,6 +19,8 @@
 
             <Button Text="Grenades" Clicked="MoveToGrenadesSubpage" />
 
+            <Button Text="Attachments" Clicked="MoveToHopupsSubpage" />
+
         </StackLayout>
     </ScrollView>
 
