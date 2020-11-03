@@ -6,12 +6,12 @@ using Xamarin.Forms.Xaml;
 namespace MaybeThisWillWork.CharacterContentPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Bloodhound : ContentPage
+    public partial class Pathfinder : ContentPage
     {
-        public Bloodhound()
+        public Pathfinder()
         {
             InitializeComponent();
-            ContentLoader_Characters character = new ContentLoader_Characters(ContentLoader_Characters.Characters.Bloodhound);
+            ContentLoader_Characters character = new ContentLoader_Characters(ContentLoader_Characters.Characters.Pathfinder);
             PageContent = character.Fill(PageContent);
         }
     }

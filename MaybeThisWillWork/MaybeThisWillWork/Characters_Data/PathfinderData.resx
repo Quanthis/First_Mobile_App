@@ -124,10 +124,10 @@
     <value>105%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Using Survey Beacons reduce Ultimate cooldown by 10s</value>
+    <value>Using Survey Beacons reduces Ultimate cooldown by 10s</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Grapples traveling to another location</value>
+    <value>Grapples to another location</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Places zipline </value>

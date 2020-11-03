@@ -32,5 +32,20 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new Lifeline());
         }
+
+        private async void MoveToBangaloreSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Bangalore());
+        }
+
+        private async void MoveToPathfinderSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pathfinder());
+        }
+
+        private async void MoveToWraithSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Wraith());
+        }
     }
 }

@@ -69,6 +69,29 @@ namespace MaybeThisWillWork
 
                     return result;
 
+                case Characters.Bangalore:
+
+                    fullPath = allDefensiveGearsResourcePath + "BangloreData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Pathfinder:
+
+                    fullPath = allDefensiveGearsResourcePath + "PathfinderData";
+
+                    result = FillCharacter(result, fullPath, true);
+
+                    return result;
+
+                case Characters.Wraith:
+
+                    fullPath = allDefensiveGearsResourcePath + "WraithData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
 
                 default:
 

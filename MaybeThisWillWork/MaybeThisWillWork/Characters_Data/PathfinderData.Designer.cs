@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Using Survey Beacons reduce Ultimate cooldown by 10s.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Using Survey Beacons reduces Ultimate cooldown by 10s.
         /// </summary>
         internal static string Passive {
             get {
@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Grapples traveling to another location.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Grapples to another location.
         /// </summary>
         internal static string Tactical {
             get {

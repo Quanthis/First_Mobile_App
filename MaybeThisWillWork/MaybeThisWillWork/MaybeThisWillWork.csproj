@@ -297,6 +297,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CharacterContentPages\Bangalore.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Pathfinder.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Wraith.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Characters_Data\BangloreData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BangloreData.Designer.cs</LastGenOutput>

@@ -11,11 +11,17 @@
     <ScrollView>
         <StackLayout Margin="20">
 
-            <Button Text="Gibraltar" Clicked="MoveToGibraltarSubpage" />
-
             <Button Text="Bloodhound" Clicked="MoveToBloodhoundSubpage" />
 
+            <Button Text="Gibraltar" Clicked="MoveToGibraltarSubpage" />
+
             <Button Text="Lifeline" Clicked="MoveToLifelineSubpage" />
+
+            <Button Text="Pathfinder" Clicked="MoveToPathfinderSubpage" />
+
+            <Button Text="Bangalore" Clicked="MoveToBangaloreSubpage" />
+            
+            <Button Text="Wraith" Clicked="MoveToWraithSubpage" />
 
         </StackLayout>
     </ScrollView>
