@@ -53,5 +53,30 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new HopupContentPages.ShotgunBolt());
         }
+
+        private async void MoveToDoubleTapTriggerSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.DoubleTapTrigger());
+        }
+
+        private async void MoveToHammerpointSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.Hammerpoint());
+        }
+
+        private async void MoveToSelectfireSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.Selectfire());
+        }
+
+        private async void MoveToSkullpiercerSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.Skullpiercer());
+        }
+
+        private async void MoveToTurbochargerSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.Turbocharger());
+        }
     }
 }

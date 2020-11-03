@@ -28,6 +28,16 @@
 
                 <Button Text="Shotgun Bolt" Clicked="MoveToShotgunBoltSubpage" Margin="10"/>
 
+                <Button Text="Double Tap Trigger" Clicked="MoveToDoubleTapTriggerSubpage" Margin="10"/>
+
+                <Button Text="Hammerpoint" Clicked="MoveToHammerpointSubpage" Margin="10"/>
+
+                <Button Text="Selectfire" Clicked="MoveToSelectfireSubpage" Margin="10"/>
+
+                <Button Text="Skullpiercer" Clicked="MoveToSkullpiercerSubpage" Margin="10"/>
+
+                <Button Text="Turbocharger" Clicked="MoveToTurbochargerSubpage" Margin="10"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -1,11 +1,8 @@
-﻿using MaybeThisWillWork.HopupContentPages;
-using MaybeThisWillWork.WeaponContentPages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Resources;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace MaybeThisWillWork
 {
@@ -112,6 +109,45 @@ namespace MaybeThisWillWork
 
                     return stackLayout;
 
+                case Hopups.DoubleTapTrigger:
+
+                    fullPath = allHopupsPath + "DoubleTapTriggerData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.Hammerpoint:
+
+                    fullPath = allHopupsPath + "HammerpointData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.SelectiveReceiver:
+
+                    fullPath = allHopupsPath + "SelectiveReceiverData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.Skullpiercer:
+
+                    fullPath = allHopupsPath + "SkullpiercerData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.Turbocharger:
+
+                    fullPath = allHopupsPath + "TurbochargerData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
 
                 default:
 
