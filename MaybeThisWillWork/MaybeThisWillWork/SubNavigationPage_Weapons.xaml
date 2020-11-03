@@ -30,8 +30,16 @@
                 <Button Text="Prowler SMG" Clicked="MoveToProwlerPage"/>
 
                 <Button Text="R99" Clicked="MoveToR99Page"/>
+
                 
                 
+                <Button Text="Devotion" Clicked="MoveToDevotionPage"/>
+
+                <Button Text="Spitfire" Clicked="MoveToSpitfirePage"/>
+
+                <Button Text="L-STAR" Clicked="MoveToLstarPage"/>
+
+
                 <Button Text="Charge Rifle" Clicked="MoveToChargeRiflePage"/>
 
                 <Button Text="Longbow DMR" Clicked="MoveToLongbowPage"/>

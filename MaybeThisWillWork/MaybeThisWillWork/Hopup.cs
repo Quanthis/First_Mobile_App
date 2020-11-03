@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace MaybeThisWillWork
 {
@@ -29,6 +30,18 @@ namespace MaybeThisWillWork
         public List<string> ReturnCompatibileWeapons()
         {
             List<string> result = new List<string>(compatibileWeapons.Split(','));
+
+            StringBuilder sb;
+            for (int item = 0 ; item < result.Count; ++item)
+            {
+                sb = new StringBuilder(result[item]);
+                if (result[item].Contains(" "))
+                {
+                    int index = result[item].IndexOf(" ");
+                    sb.Remove(index, 1);
+                    result[item] = sb.ToString();
+                }
+            }
 
             return result;
         }

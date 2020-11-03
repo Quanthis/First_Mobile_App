@@ -115,5 +115,20 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new Re45());
         }
+
+        private async void MoveToDevotionPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Devotion());
+        }
+
+        private async void MoveToSpitfirePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Spitfire());
+        }
+
+        private async void MoveToLstarPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lstar());
+        }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using MaybeThisWillWork.HopupContentPages;
+using MaybeThisWillWork.WeaponContentPages;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace MaybeThisWillWork
 {
@@ -31,6 +33,7 @@ namespace MaybeThisWillWork
 
         private Hopups hopup;
         private StackLayout stackLayout;
+        Hopup hopup1;
 
         public ContentLoader_Hopups(Hopups hopup, StackLayout stackLayout)
         {
@@ -63,12 +66,11 @@ namespace MaybeThisWillWork
             Label propertyTitle;
             Label property;
             Label compatibileWeaponsTitle;
-            Button button;
-            List<Button> compatibileWeapons = new List<Button>();
 
-            Hopup hopup = CreateHopupFromData(fullPath);
-            string[,] hopupresults = hopup.ReturnProperty();
-            List<string> compatibileWeaponsList = hopup.ReturnCompatibileWeapons();
+
+            hopup1 = CreateHopupFromData(fullPath);
+            string[,] hopupresults = hopup1.ReturnProperty();
+
 
 
             propertyTitle = new Label
@@ -90,31 +92,41 @@ namespace MaybeThisWillWork
             stackLayout.Children.Add(SetLabelProperties(property));
             stackLayout.Children.Add(SetTitleLabelProperties(compatibileWeaponsTitle));
 
-            foreach(var item in compatibileWeaponsList)
-            {
-                button = new Xamarin.Forms.Button
-                {
-                    Text = item
-                    
-                };
-                button.Clicked += MoveToR99Subpage;
-
-                compatibileWeapons.Add(button);
-            }
-
-            foreach (var item in compatibileWeapons)
+            /*foreach (var item in compatibileWeapons)
             {
                 stackLayout.Children.Add(item);
-            }
+            }*/
 
             return stackLayout;
         }
 
-        private async void MoveToR99Subpage(object sender, EventArgs e)
+        public List<Button> GetButtons()
+        {
+            Button button;
+            List<Button> compatibileWeapons = new List<Button>();
+            List<string> compatibileWeaponsList = hopup1.ReturnCompatibileWeapons();
+
+            foreach (var item in compatibileWeaponsList)
+            {
+                button = new Xamarin.Forms.Button
+                {
+                    Text = item,
+                    AutomationId = $"MoveTo{item}Page"
+                };
+
+                compatibileWeapons.Add(button);
+            }
+
+            return compatibileWeapons;
+        }
+
+        /*private async void MoveToR99Subpage(object sender, EventArgs e)
         {
             /*object o = HopupContentPages.BarrelStabilizer;
             o.MoveToR99Subpage();*/
-        }
+        /*
+            Push
+        }*/
 
         private Hopup CreateHopupFromData(string resourcePath)
         {

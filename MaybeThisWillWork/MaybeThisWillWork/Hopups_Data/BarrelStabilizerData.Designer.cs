@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.Hopups_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu yes.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu R301, Alternator, Devotion, G7Scout, Hemlok, Longbow, Re45, Spitfire, Volt.
         /// </summary>
         internal static string compatibileWeapons {
             get {
@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.Hopups_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 123.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Decreases recoil. Level 4 also reduces highlight.
         /// </summary>
         internal static string property {
             get {
