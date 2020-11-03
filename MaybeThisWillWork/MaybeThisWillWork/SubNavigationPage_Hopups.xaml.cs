@@ -38,5 +38,20 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new HopupContentPages.StandardStock());
         }
+
+        private async void MoveToSniperStockSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.SniperStock());
+        }
+
+        private async void MoveToExtendedSniperMagSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.SniperMagazineExtension());
+        }
+
+        private async void MoveToShotgunBoltSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HopupContentPages.ShotgunBolt());
+        }
     }
 }

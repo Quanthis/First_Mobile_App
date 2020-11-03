@@ -12,15 +12,21 @@
         <ScrollView>
             <StackLayout x:Name="PageContent" Margin="20">
 
-                <Button Text="Barrel Stabilizer" Clicked="MoveToBarrelStabilizerSubpage" />
+                <Button Text="Barrel Stabilizer" Clicked="MoveToBarrelStabilizerSubpage" Margin="10"/>
 
-                <Button Text="Extended Energy Mag" Clicked="MoveToEnergyMagazineExtensionSubpage" />
+                <Button Text="Extended Energy Mag" Clicked="MoveToEnergyMagazineExtensionSubpage" Margin="10"/>
 
-                <Button Text="Extended Heavy Mag" Clicked="MoveToHeavyMagazineExtensionSubpage" />
+                <Button Text="Extended Heavy Mag" Clicked="MoveToHeavyMagazineExtensionSubpage" Margin="10"/>
 
-                <Button Text="Extended Light Mag" Clicked="MoveToLightMagazineExtensionSubpage" />
+                <Button Text="Extended Light Mag" Clicked="MoveToLightMagazineExtensionSubpage" Margin="10"/>
 
-                <Button Text="Standard Stock" Clicked="MoveToStandardStockSubpage" />
+                <Button Text="Standard Stock" Clicked="MoveToStandardStockSubpage" Margin="10"/>
+
+                <Button Text="Sniper Stock" Clicked="MoveToSniperStockSubpage" Margin="10"/>
+
+                <Button Text="Extended Sniper Mag" Clicked="MoveToExtendedSniperMagSubpage" Margin="10"/>
+
+                <Button Text="Shotgun Bolt" Clicked="MoveToShotgunBoltSubpage" Margin="10"/>
 
             </StackLayout>
         </ScrollView>

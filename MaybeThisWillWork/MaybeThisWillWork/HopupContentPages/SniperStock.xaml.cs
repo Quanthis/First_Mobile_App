@@ -1,20 +1,19 @@
 ﻿using MaybeThisWillWork.WeaponContentPages;
 using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace MaybeThisWillWork.HopupContentPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StandardStock : ContentPage
+    public partial class SniperStock : ContentPage
     {
-        public StandardStock()
+        public SniperStock()
         {
             InitializeComponent();
 
-            ContentLoader_Hopups contentLoader = new ContentLoader_Hopups(ContentLoader_Hopups.Hopups.StandardStock, PageContent);
+            ContentLoader_Hopups contentLoader = new ContentLoader_Hopups(ContentLoader_Hopups.Hopups.SniperStock, PageContent);
             PageContent = contentLoader.Fill();
 
             PageContent = AddButtons(contentLoader);

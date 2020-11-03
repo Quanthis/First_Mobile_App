@@ -88,6 +88,30 @@ namespace MaybeThisWillWork
 
                     return stackLayout;
 
+                case Hopups.SniperMagazineExtension:
+
+                    fullPath = allHopupsPath + "SniperMagazineExtensionData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.SniperStock:
+
+                    fullPath = allHopupsPath + "SniperStockData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.ShotgunBolt:
+
+                    fullPath = allHopupsPath + "ShotgunBoltData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
                 default:
 
                     return stackLayout;

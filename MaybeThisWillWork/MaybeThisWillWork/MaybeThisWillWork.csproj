@@ -191,6 +191,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>LightMagazineExtensionData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Hopups_Data\ShotgunBoltData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ShotgunBoltData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\SniperMagazineExtensionData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SniperMagazineExtensionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\SniperStockData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SniperStockData.resx</DependentUpon>
+    </Compile>
     <Compile Update="Hopups_Data\StandardStockData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -516,6 +531,15 @@
     <EmbeddedResource Update="HopupContentPages\LightMagazineExtension.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\ShotgunBolt.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\SniperMagazineExtension.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\SniperStock.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="HopupContentPages\StandardStock.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -534,6 +558,18 @@
     <EmbeddedResource Update="Hopups_Data\LightMagazineExtensionData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LightMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\ShotgunBoltData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShotgunBoltData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\SniperMagazineExtensionData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SniperMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\SniperStockData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SniperStockData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\StandardStockData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
