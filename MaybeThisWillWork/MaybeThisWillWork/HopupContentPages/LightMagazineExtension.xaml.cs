@@ -1,18 +1,51 @@
 ﻿using MaybeThisWillWork.WeaponContentPages;
 using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MaybeThisWillWork
+namespace MaybeThisWillWork.HopupContentPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SubNavigationPage_Weapons : ContentPage
+    public partial class LightMagazineExtension : ContentPage
     {
-        public SubNavigationPage_Weapons()
+        public LightMagazineExtension()
         {
             InitializeComponent();
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.DarkGray;
+
+            ContentLoader_Hopups contentLoader = new ContentLoader_Hopups(ContentLoader_Hopups.Hopups.LightMagazineExtension, PageContent);
+            PageContent = contentLoader.Fill();
+
+            List<Button> buttons = contentLoader.GetButtons();
+
+            foreach (var item in buttons)
+            {
+                try
+                {
+                    string methodName = item.AutomationId;
+                    EventHandler handler = (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), this, methodName, false);
+                    item.Clicked += handler;
+                    PageContent.Children.Add(item);
+                }
+                catch (Exception ex)
+                {
+                    string methodName = AutomationId;
+
+                    Label InfoLabel = new Label
+                    {
+                        Text = "Method name: " + methodName + "\nThere was an Exception: " + ex,
+                        TextColor = Color.White
+                    };
+                    PageContent.Children.Add(InfoLabel);
+                }
+            }
+        }
+
+        #region LoadWeaponPages
+        public async void MoveToR99Subpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MaybeThisWillWork.WeaponContentPages.R99());
         }
 
         private async void MoveToR301Page(object sender, EventArgs e)
@@ -127,5 +160,6 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new Lstar());
         }
+        #endregion
     }
 }

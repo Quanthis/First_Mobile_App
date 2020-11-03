@@ -1,9 +1,5 @@
 ﻿using MaybeThisWillWork.CharacterContentPages;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,6 +12,7 @@ namespace MaybeThisWillWork
         public SubNavigationPage_Legends()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.DarkGray;
         }
 
         private async void MoveToGibraltarSubpage(object sender, EventArgs e)

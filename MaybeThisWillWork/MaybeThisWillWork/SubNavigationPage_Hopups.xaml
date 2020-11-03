@@ -14,6 +14,14 @@
 
                 <Button Text="Barrel Stabilizer" Clicked="MoveToBarrelStabilizerSubpage" />
 
+                <Button Text="Extended Energy Mag" Clicked="MoveToEnergyMagazineExtensionSubpage" />
+
+                <Button Text="Extended Heavy Mag" Clicked="MoveToHeavyMagazineExtensionSubpage" />
+
+                <Button Text="Extended Light Mag" Clicked="MoveToLightMagazineExtensionSubpage" />
+
+                <Button Text="Standard Stock" Clicked="MoveToStandardStockSubpage" />
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

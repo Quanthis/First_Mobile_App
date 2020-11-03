@@ -44,12 +44,45 @@ namespace MaybeThisWillWork
         public StackLayout Fill()
         {
             string allHopupsPath = "MaybeThisWillWork.Hopups_Data.";
+            string fullPath;
 
             switch(hopup)
             {
                 case Hopups.BarrelStabilizer:
 
-                    string fullPath = allHopupsPath + "BarrelStabilizerData";
+                    fullPath = allHopupsPath + "BarrelStabilizerData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.EnergyMagazineExtension:
+
+                    fullPath = allHopupsPath + "EnergyMagazineExtensionData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.HeavyMagazineExtension:
+
+                    fullPath = allHopupsPath + "HeavyMagazineExtensionData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.LightMagazineExtension:
+
+                    fullPath = allHopupsPath + "LightMagazineExtensionData";
+
+                    stackLayout = FillHopup(fullPath);
+
+                    return stackLayout;
+
+                case Hopups.StandardStock:
+
+                    fullPath = allHopupsPath + "StandardStockData";
 
                     stackLayout = FillHopup(fullPath);
 
@@ -67,11 +100,8 @@ namespace MaybeThisWillWork
             Label property;
             Label compatibileWeaponsTitle;
 
-
             hopup1 = CreateHopupFromData(fullPath);
             string[,] hopupresults = hopup1.ReturnProperty();
-
-
 
             propertyTitle = new Label
             {
@@ -91,11 +121,6 @@ namespace MaybeThisWillWork
             stackLayout.Children.Add(SetTitleLabelProperties(propertyTitle));
             stackLayout.Children.Add(SetLabelProperties(property));
             stackLayout.Children.Add(SetTitleLabelProperties(compatibileWeaponsTitle));
-
-            /*foreach (var item in compatibileWeapons)
-            {
-                stackLayout.Children.Add(item);
-            }*/
 
             return stackLayout;
         }
@@ -119,14 +144,6 @@ namespace MaybeThisWillWork
 
             return compatibileWeapons;
         }
-
-        /*private async void MoveToR99Subpage(object sender, EventArgs e)
-        {
-            /*object o = HopupContentPages.BarrelStabilizer;
-            o.MoveToR99Subpage();*/
-        /*
-            Push
-        }*/
 
         private Hopup CreateHopupFromData(string resourcePath)
         {

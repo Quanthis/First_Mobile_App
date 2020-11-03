@@ -1,9 +1,6 @@
 ﻿using MaybeThisWillWork.WeaponContentPages;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -36,7 +33,7 @@ namespace MaybeThisWillWork.HopupContentPages
 
                     Label InfoLabel = new Label
                     {
-                        Text = "Method name: " + methodName + "\nException: " + ex,
+                        Text = "Method name: " + methodName + "\nThere was an exception: " + ex,
                         TextColor = Color.White
                     };
                     PageContent.Children.Add(InfoLabel);

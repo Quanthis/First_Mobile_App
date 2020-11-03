@@ -176,6 +176,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>BarrelStabilizerData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Hopups_Data\EnergyMagazineExtensionData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EnergyMagazineExtensionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\HeavyMagazineExtensionData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HeavyMagazineExtensionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\LightMagazineExtensionData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LightMagazineExtensionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\StandardStockData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StandardStockData.resx</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -487,9 +507,37 @@
     <EmbeddedResource Update="HopupContentPages\BarrelStabilizer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\EnergyMagazineExtension.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\HeavyMagazineExtension.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\LightMagazineExtension.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HopupContentPages\StandardStock.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\BarrelStabilizerData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BarrelStabilizerData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\EnergyMagazineExtensionData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnergyMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\HeavyMagazineExtensionData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HeavyMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\LightMagazineExtensionData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LightMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\StandardStockData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StandardStockData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

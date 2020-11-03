@@ -1,10 +1,6 @@
 ﻿using MaybeThisWillWork.Grenades_Data;
 using MaybeThisWillWork.GrenadesContentPages;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,6 +13,7 @@ namespace MaybeThisWillWork
         public SubNavigationPage_Grenades()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.DarkGray;
         }
 
         private async void MoveToArcStarSubpage(object sender, EventArgs e)
