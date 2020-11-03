@@ -35,6 +35,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Characters_Data\BangloreData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BangloreData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\WraithData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WraithData.resx</DependentUpon>
+    </Compile>
     <Compile Update="DefensiveGear_Data\ArmorLv1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -287,6 +297,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Characters_Data\BangloreData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BangloreData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\WraithData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WraithData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="GrenadesContentPages\ArcStar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -121,10 +121,10 @@
     <value>100%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Receiving or being shooten in certain area increases movement speed</value>
+    <value>Being shot at increases movement speed for a brief moment</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Uses smoke grenade</value>
+    <value>Uses smoke grenade (2 loads)</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Call air attack that erupts after 6 seconds</value>

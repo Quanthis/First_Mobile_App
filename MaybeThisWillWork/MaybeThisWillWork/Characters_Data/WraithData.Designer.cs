@@ -59,41 +59,5 @@ namespace MaybeThisWillWork.Characters_Data {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 105%.
-        /// </summary>
-        internal static string DamageReceiving {
-            get {
-                return ResourceManager.GetString("DamageReceiving", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu User hears voice when danger incoming.
-        /// </summary>
-        internal static string Passive {
-            get {
-                return ResourceManager.GetString("Passive", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Jumps into the void avoiding damage.
-        /// </summary>
-        internal static string Tactical {
-            get {
-                return ResourceManager.GetString("Tactical", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places Two - doors portal that allow everyone to fast travel between them.
-        /// </summary>
-        internal static string Ultimate {
-            get {
-                return ResourceManager.GetString("Ultimate", resourceCulture);
-            }
-        }
     }
 }
