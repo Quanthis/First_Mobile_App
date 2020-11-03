@@ -176,10 +176,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>BarrelStabilizerData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Hopups_Data\DoubleTapTriggerData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DoubleTapTriggerData.resx</DependentUpon>
+    </Compile>
     <Compile Update="Hopups_Data\EnergyMagazineExtensionData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>EnergyMagazineExtensionData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\HammerpointData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HammerpointData.resx</DependentUpon>
     </Compile>
     <Compile Update="Hopups_Data\HeavyMagazineExtensionData.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -191,10 +201,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>LightMagazineExtensionData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Hopups_Data\SelectiveReceiverData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SelectiveReceiverData.resx</DependentUpon>
+    </Compile>
     <Compile Update="Hopups_Data\ShotgunBoltData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ShotgunBoltData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\SkullpiercerData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SkullpiercerData.resx</DependentUpon>
     </Compile>
     <Compile Update="Hopups_Data\SniperMagazineExtensionData.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -210,6 +230,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>StandardStockData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Hopups_Data\TurbochargerData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TurbochargerData.resx</DependentUpon>
     </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
@@ -547,9 +572,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BarrelStabilizerData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\DoubleTapTriggerData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DoubleTapTriggerData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\EnergyMagazineExtensionData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>EnergyMagazineExtensionData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\HammerpointData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HammerpointData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\HeavyMagazineExtensionData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -559,9 +592,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LightMagazineExtensionData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\SelectiveReceiverData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SelectiveReceiverData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\ShotgunBoltData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ShotgunBoltData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\SkullpiercerData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SkullpiercerData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Hopups_Data\SniperMagazineExtensionData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -574,6 +615,10 @@
     <EmbeddedResource Update="Hopups_Data\StandardStockData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>StandardStockData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Hopups_Data\TurbochargerData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TurbochargerData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
