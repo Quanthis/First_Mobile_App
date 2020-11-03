@@ -30,7 +30,7 @@ namespace MaybeThisWillWork
 
         private Hopups hopup;
         private StackLayout stackLayout;
-        Hopup hopup1;
+        private Hopup hopup1;
 
         public ContentLoader_Hopups(Hopups hopup, StackLayout stackLayout)
         {

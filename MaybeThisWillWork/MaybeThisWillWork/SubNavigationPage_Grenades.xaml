@@ -11,11 +11,11 @@
     <ScrollView>
         <StackLayout Margin="20">
 
-            <Button Text="Arc Star" Clicked="MoveToArcStarSubpage" />
+            <Button Text="Arc Star" Clicked="MoveToArcStarSubpage" Margin="10"/>
 
-            <Button Text="Frag Grenade" Clicked="MoveToFragGrenadeSubpage" />
+            <Button Text="Frag Grenade" Clicked="MoveToFragGrenadeSubpage" Margin="10"/>
 
-            <Button Text="Thermite Grenade" Clicked="MoveToThermiteGrenadeSubpage" />
+            <Button Text="Thermite Grenade" Clicked="MoveToThermiteGrenadeSubpage" Margin="10"/>
 
         </StackLayout>
     </ScrollView>
