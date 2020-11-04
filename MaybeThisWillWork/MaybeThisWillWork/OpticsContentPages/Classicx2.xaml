@@ -5,14 +5,14 @@
              BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
-        <Label Text="2x 'Classic'" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Label Text="2x 'Bruiser'" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="PageContent" Margin="20">
 
-
+                <Image Source="Bruiserx2.png"/>
 
             </StackLayout>
         </ScrollView>

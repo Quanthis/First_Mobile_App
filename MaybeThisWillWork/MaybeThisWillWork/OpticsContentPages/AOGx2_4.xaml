@@ -12,7 +12,7 @@
         <ScrollView>
             <StackLayout x:Name="PageContent" Margin="20">
 
-
+                <Image Source="AOGx2_4.png"/>
 
             </StackLayout>
         </ScrollView>

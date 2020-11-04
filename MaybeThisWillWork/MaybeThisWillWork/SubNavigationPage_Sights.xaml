@@ -14,7 +14,7 @@
 
                 <Button Text="1x 'Classic'" Clicked="MoveToClassicx1"/>
 
-                <Button Text="2x 'Classic'" Clicked="MoveToClassicx2"/>
+                <Button Text="2x 'Bruiser'" Clicked="MoveToClassicx2"/>
 
                 <Button Text="1x 'Holo'" Clicked="MoveToHolox1"/>
 
