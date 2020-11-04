@@ -9,7 +9,7 @@
     </NavigationPage.TitleView>
 
     <ScrollView>
-        <StackLayout Margin="20">
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand">
 
             <Button Text="Arc Star" Clicked="MoveToArcStarSubpage" Margin="10"/>
 

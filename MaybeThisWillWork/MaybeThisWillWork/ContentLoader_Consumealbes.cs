@@ -41,7 +41,35 @@ namespace MaybeThisWillWork
                     layout = FillConsumeable(fullPath);
                     return layout;
 
+                case Consumeables.MedKit:
 
+                    fullPath = allConsumeablesPath + "MedKitData";
+                    layout = FillConsumeable(fullPath);
+                    return layout;
+
+                case Consumeables.ShieldCell:
+
+                    fullPath = allConsumeablesPath + "ShieldCellData";
+                    layout = FillConsumeable(fullPath);
+                    return layout;
+
+                case Consumeables.ShieldBattery:
+
+                    fullPath = allConsumeablesPath + "ShieldBatteryData";
+                    layout = FillConsumeable(fullPath);
+                    return layout;
+
+                case Consumeables.PhoenixKit:
+
+                    fullPath = allConsumeablesPath + "PhoenixKitData";
+                    layout = FillConsumeable(fullPath);
+                    return layout;
+
+                case Consumeables.UltimateAccelerant:
+
+                    fullPath = allConsumeablesPath + "UltimateAccelerantData";
+                    layout = FillConsumeable(fullPath);
+                    return layout;
 
                 default:
 

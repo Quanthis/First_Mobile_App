@@ -9,19 +9,19 @@
     </NavigationPage.TitleView>
 
     <ScrollView>
-        <StackLayout Margin="20">
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand">
 
-            <Button Text="Bloodhound" Clicked="MoveToBloodhoundSubpage" />
+            <Button Text="Bloodhound" Clicked="MoveToBloodhoundSubpage" Margin="7"/>
 
-            <Button Text="Gibraltar" Clicked="MoveToGibraltarSubpage" />
+            <Button Text="Gibraltar" Clicked="MoveToGibraltarSubpage" Margin="7"/>
 
-            <Button Text="Lifeline" Clicked="MoveToLifelineSubpage" />
+            <Button Text="Lifeline" Clicked="MoveToLifelineSubpage" Margin="7"/>
 
-            <Button Text="Pathfinder" Clicked="MoveToPathfinderSubpage" />
+            <Button Text="Pathfinder" Clicked="MoveToPathfinderSubpage" Margin="7"/>
 
-            <Button Text="Bangalore" Clicked="MoveToBangaloreSubpage" />
-            
-            <Button Text="Wraith" Clicked="MoveToWraithSubpage" />
+            <Button Text="Bangalore" Clicked="MoveToBangaloreSubpage" Margin="7"/>
+
+            <Button Text="Wraith" Clicked="MoveToWraithSubpage" Margin="7"/>
 
         </StackLayout>
     </ScrollView>

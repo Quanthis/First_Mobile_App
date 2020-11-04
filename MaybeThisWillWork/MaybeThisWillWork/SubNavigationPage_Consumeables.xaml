@@ -10,10 +10,19 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout x:Name="PageContent" Margin="20">
+            <StackLayout x:Name="PageContent" Margin="20" VerticalOptions="CenterAndExpand">
 
-                <Button Text="Syringe" Clicked="MoveToSyringe"/>
+                <Button Text="Syringe" Clicked="MoveToSyringe" Margin="10"/>
 
+                <Button Text="Med Kit" Clicked="MoveToMedKit" Margin="10"/>
+
+                <Button Text="ShieldCell" Clicked="MoveToShieldCell" Margin="10"/>
+
+                <Button Text="ShieldBattery" Clicked="MoveToShieldBattery" Margin="10"/>
+
+                <Button Text="Phoenix Kit" Clicked="MoveToPhoenixKit" Margin="10"/>
+
+                <Button Text="Ultimate Accelerant" Clicked="MoveToUltimateAccelerant" Margin="10"/>
 
             </StackLayout>
         </ScrollView>

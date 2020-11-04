@@ -45,10 +45,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>WraithData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Consumeables_Data\MedKitData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MedKitData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Consumeables_Data\PhoenixKit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PhoenixKit.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Consumeables_Data\ShieldBatteryData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ShieldBatteryData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Consumeables_Data\ShieldCellData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ShieldCellData.resx</DependentUpon>
+    </Compile>
     <Compile Update="Consumeables_Data\SyringeData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>SyringeData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Consumeables_Data\UltimateAccelerantData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UltimateAccelerantData.resx</DependentUpon>
     </Compile>
     <Compile Update="DefensiveGear_Data\ArmorLv1.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -437,12 +462,47 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WraithData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\Medkit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\PhoenixKit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\ShieldBattery.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\ShieldCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ConsumeableContentPages\Syringe.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\UltimateAccelerant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\MedKitData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MedKitData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\PhoenixKit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PhoenixKit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\ShieldBatteryData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShieldBatteryData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\ShieldCellData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShieldCellData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Consumeables_Data\SyringeData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SyringeData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\UltimateAccelerantData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UltimateAccelerantData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="GrenadesContentPages\ArcStar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
