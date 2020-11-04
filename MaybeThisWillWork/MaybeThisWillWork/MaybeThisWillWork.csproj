@@ -45,6 +45,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>WraithData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Consumeables_Data\SyringeData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SyringeData.resx</DependentUpon>
+    </Compile>
     <Compile Update="DefensiveGear_Data\ArmorLv1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -432,6 +437,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WraithData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="ConsumeableContentPages\Syringe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Consumeables_Data\SyringeData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SyringeData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="GrenadesContentPages\ArcStar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -759,6 +771,9 @@
       <LastGenOutput>Sniperx6Data.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Consumeables.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Grenades.xaml">

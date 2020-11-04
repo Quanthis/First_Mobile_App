@@ -40,5 +40,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Sights());
         }
+
+        private async void MoveToConsumeablesSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Consumeables());
+        }
     }
 }
