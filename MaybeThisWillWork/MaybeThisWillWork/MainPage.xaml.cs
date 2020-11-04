@@ -35,5 +35,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Hopups());
         }
+
+        private async void MoveToOpticsSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SubNavigationPage_Sights());
+        }
     }
 }

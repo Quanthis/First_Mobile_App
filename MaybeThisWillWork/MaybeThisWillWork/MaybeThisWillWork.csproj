@@ -236,6 +236,56 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>TurbochargerData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Optics_Data\AOGx2_4Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AOGx2_4Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Classicx1Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Classicx1Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Classicx2Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Classicx2Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Digitalx1Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Digitalx1Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Digitalx4_10Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Digitalx4_10Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Holox1Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Holox1Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Holox2Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Holox2Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Rangerx3Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Rangerx3Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Sniperx4_8Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Sniperx4_8Data.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Optics_Data\Sniperx6Data.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Sniperx6Data.resx</DependentUpon>
+    </Compile>
     <Compile Update="WeaponContentPages\TripleTake.xaml.cs">
       <DependentUpon>TripleTake.xaml</DependentUpon>
     </Compile>
@@ -635,6 +685,49 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TurbochargerData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Classicx1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\AOGx2_4Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AOGx2_4Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Classicx1Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classicx1Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Classicx2Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Classicx2Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Digitalx1Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Digitalx1Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Digitalx4_10Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Digitalx4_10Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Holox1Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holox1Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Holox2Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holox2Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Rangerx3Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Rangerx3Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Sniperx4_8Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sniperx4_8Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Optics_Data\Sniperx6Data.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sniperx6Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Armors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -645,6 +738,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Legends.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Sights.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\Eva8.xaml">

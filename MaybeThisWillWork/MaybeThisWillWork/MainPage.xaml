@@ -21,6 +21,8 @@
 
             <Button Text="Attachments" Clicked="MoveToHopupsSubpage" Margin="10"/>
 
+            <Button Text="Optics" Clicked="MoveToOpticsSubpage" Margin="10"/>
+
         </StackLayout>
     </ScrollView>
 

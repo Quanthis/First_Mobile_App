@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Resources;
-using System.Text;
 using Xamarin.Forms;
 
 namespace MaybeThisWillWork
@@ -35,7 +34,7 @@ namespace MaybeThisWillWork
 
         public StackLayout Fill()
         {
-            string allSightsPath = "MaybeThisWillWork.Sights_Data.";
+            string allSightsPath = "MaybeThisWillWork.Optics_Data.";
             string fullPath;
 
             switch (sight)
@@ -48,7 +47,7 @@ namespace MaybeThisWillWork
 
                 case Sights.Classicx2:
 
-                    fullPath = allSightsPath + "Classicx12Data";
+                    fullPath = allSightsPath + "Classicx2Data";
                     layout = FillHopup(fullPath);
                     return layout;
 
@@ -139,22 +138,43 @@ namespace MaybeThisWillWork
 
         public List<Button> GetButtons()
         {
-            Button button;
-            List<Button> compatibileWeapons = new List<Button>();
             List<string> compatibileWeaponsList = optics.ReturnCompatibileWeapons();
+            Button button;
 
-            foreach (var item in compatibileWeaponsList)
+            if (compatibileWeaponsList[0] != "AllWeapons")
+            {                
+                List<Button> compatibileWeapons = new List<Button>();
+
+
+                foreach (var item in compatibileWeaponsList)
+                {
+                    button = new Xamarin.Forms.Button
+                    {
+                        Text = item,
+                        AutomationId = $"MoveTo{item}Page"
+                    };
+
+                    compatibileWeapons.Add(button);
+                }
+
+                return compatibileWeapons;
+            }
+            else
             {
+                List<Button> compatibileWeapons = new List<Button>();
+
+                string text = "Weapons";
                 button = new Xamarin.Forms.Button
                 {
-                    Text = item,
-                    AutomationId = $"MoveTo{item}Page"
+                    Text = text,
+                    AutomationId = $"MoveTo{text}Page",
+                    Margin = 20
                 };
 
                 compatibileWeapons.Add(button);
-            }
 
-            return compatibileWeapons;
+                return compatibileWeapons;
+            }
         }
 
         private Optics CreateOpticsFromData(string resourcePath)

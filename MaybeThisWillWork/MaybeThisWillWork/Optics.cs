@@ -33,19 +33,31 @@ namespace MaybeThisWillWork
         {
             List<string> result = new List<string>(compatibileWeapons.Split(','));
 
-            StringBuilder sb;
-            for (int item = 0; item < result.Count; ++item)
+            if (result[0] == "AllWeapons")
             {
-                sb = new StringBuilder(result[item]);
-                if (result[item].Contains(" "))
+                string hold = result[0];
+                result = new List<string>();
+                result.Add(hold);
+                return result;
+            }
+            else
+            {
+
+                StringBuilder sb;
+                for (int item = 0; item < result.Count; ++item)
                 {
-                    int index = result[item].IndexOf(" ");
-                    sb.Remove(index, 1);
-                    result[item] = sb.ToString();
+                    sb = new StringBuilder(result[item]);
+                    if (result[item].Contains(" "))
+                    {
+                        int index = result[item].IndexOf(" ");
+                        sb.Remove(index, 1);
+                        result[item] = sb.ToString();
+                    }
                 }
+
+                return result;
             }
 
-            return result;
         }
     }
 }
