@@ -236,6 +236,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>TurbochargerData.resx</DependentUpon>
     </Compile>
+    <Compile Update="OpticsContentPages\Sniperx4_8.xaml.cs">
+      <DependentUpon>Sniperx4_8.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Optics_Data\AOGx2_4Data.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -685,7 +688,34 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TurbochargerData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\AOGx2_4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="OpticsContentPages\Classicx1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Classicx2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Digitalx1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Digitalx4_10.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Holox1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Holox2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Rangerx3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Sniperx4_8.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OpticsContentPages\Sniperx6.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Optics_Data\AOGx2_4Data.resx">
