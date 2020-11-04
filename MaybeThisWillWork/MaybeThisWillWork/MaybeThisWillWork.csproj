@@ -40,6 +40,46 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>BangloreData.resx</DependentUpon>
     </Compile>
+    <Compile Update="Characters_Data\CausticData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CausticData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\CryptoData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CryptoData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\LobaData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LobaData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\MirageData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MirageData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\OctaneData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OctaneData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\RampartData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RampartData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\RevenantData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RevenantData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Characters_Data\WattsonData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WattsonData.resx</DependentUpon>
+    </Compile>
     <Compile Update="Characters_Data\WraithData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -457,6 +497,38 @@
     <EmbeddedResource Update="Characters_Data\BangloreData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BangloreData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\CausticData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CausticData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\CryptoData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CryptoData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\LobaData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LobaData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\MirageData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MirageData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\OctaneData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OctaneData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\RampartData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RampartData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\RevenantData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RevenantData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Characters_Data\WattsonData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WattsonData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Characters_Data\WraithData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
