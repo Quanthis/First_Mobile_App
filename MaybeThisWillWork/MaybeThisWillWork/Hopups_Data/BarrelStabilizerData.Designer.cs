@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.Hopups_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu R301, Alternator, Devotion, G7Scout, Hemlok, Longbow, Re45, Spitfire, Volt.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu R99, R301, Alternator, Devotion, G7Scout, Hemlok, Longbow, Re45, Spitfire, Volt.
         /// </summary>
         internal static string compatibileWeapons {
             get {

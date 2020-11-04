@@ -44,5 +44,45 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new Wraith());
         }
+
+        private async void MoveToCausticSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Caustuc());
+        }
+
+        private async void MoveToCryptoSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Crypto());
+        }
+
+        private async void MoveToLobaSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Loba());
+        }
+
+        private async void MoveToMirageSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Mirage());
+        }
+
+        private async void MoveToOctaneSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Octane());
+        }
+
+        private async void MoveToRampartSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Rampart());
+        }
+
+        private async void MoveToRevenantSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Revenant());
+        }
+
+        private async void MoveToWattsonSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Wattson());
+        }
     }
 }

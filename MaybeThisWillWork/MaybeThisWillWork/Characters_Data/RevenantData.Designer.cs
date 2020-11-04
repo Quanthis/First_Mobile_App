@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Blocks enemy abilities.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Throws field that blocks enemy abilities for several seconds (2 loads).
         /// </summary>
         internal static string Tactical {
             get {

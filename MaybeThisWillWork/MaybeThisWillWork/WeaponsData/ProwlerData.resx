@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Ammo" xml:space="preserve">
-    <value>Heavy</value>
+    <value>Heavy / Unrefinable in Season 7</value>
   </data>
   <data name="Damage" xml:space="preserve">
     <value>15</value>
@@ -131,7 +131,6 @@
   </data>
   <data name="MagazineSize" xml:space="preserve">
     <value>20 / 25 / 30 /35</value>
-    <comment> </comment>
   </data>
   <data name="MovementSpeedCut" xml:space="preserve">
     <value>10%</value>
@@ -140,6 +139,6 @@
     <value>885</value>
   </data>
   <data name="Type" xml:space="preserve">
-    <value>Small Machine Gun</value>
+    <value>Small Machine Gun [Care Package in Season 7]</value>
   </data>
 </root>

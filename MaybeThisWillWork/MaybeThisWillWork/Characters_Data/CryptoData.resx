@@ -127,7 +127,7 @@
     <value>Teammates see enemies and traps in 30 meters range from drone</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Switches to controlable drone view</value>
+    <value>Switches to controllable drone view</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Uses electrical impulse from drone location that damages enemy shields</value>

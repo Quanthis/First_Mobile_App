@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Unrefinable.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Light.
         /// </summary>
         internal static string Ammo {
             get {
@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 12.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 11.
         /// </summary>
         internal static string Damage {
             get {
@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 18.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 17.
         /// </summary>
         internal static string HeadDamage {
             get {
@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 10.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 9.
         /// </summary>
         internal static string LegDamage {
             get {
@@ -97,7 +97,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 32.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu 20 / 22 / 24 / 27.
         /// </summary>
         internal static string MagazineSize {
             get {
@@ -124,7 +124,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Small Machine Gun [Care package].
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Small Machine Gun.
         /// </summary>
         internal static string Type {
             get {

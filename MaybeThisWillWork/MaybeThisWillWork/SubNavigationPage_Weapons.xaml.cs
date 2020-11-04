@@ -13,6 +13,15 @@ namespace MaybeThisWillWork
         {
             InitializeComponent();
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.DarkGray;
+            ChangeMargins();
+        }
+
+        private async void ChangeMargins()
+        {
+            for (int i = 0; i < PageContent.Children.Count; ++i)
+            {
+                PageContent.Children[i].Margin = 7;
+            }
         }
 
         private async void MoveToR301Page(object sender, EventArgs e)
@@ -126,6 +135,10 @@ namespace MaybeThisWillWork
         private async void MoveToLstarPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Lstar());
+        }
+        private async void MoveToPeacekeeperPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Peacekeeper());
         }
     }
 }

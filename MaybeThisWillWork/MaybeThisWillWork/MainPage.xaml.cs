@@ -1,5 +1,4 @@
-﻿using MaybeThisWillWork.CharacterContentPages;
-using System;
+﻿using System;
 using Xamarin.Forms;
 
 namespace MaybeThisWillWork
@@ -9,6 +8,16 @@ namespace MaybeThisWillWork
         public MainPage()
         {
             InitializeComponent();
+
+            ChangeMargins();
+        }
+
+        private async void ChangeMargins()
+        {
+            for (int i = 0; i < PageContent.Children.Count; ++i)
+            {
+                PageContent.Children[i].Margin = 10;
+            }
         }
 
         private async void MoveToWeaponsSubpage(object sender, EventArgs e)

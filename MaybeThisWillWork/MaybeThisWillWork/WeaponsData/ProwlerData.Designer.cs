@@ -61,7 +61,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Heavy.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Heavy / Unrefinable in Season 7.
         /// </summary>
         internal static string Ammo {
             get {
@@ -124,7 +124,7 @@ namespace MaybeThisWillWork.WeaponsData {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Small Machine Gun.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Small Machine Gun [Care Package in Season 7].
         /// </summary>
         internal static string Type {
             get {

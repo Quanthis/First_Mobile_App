@@ -13,6 +13,15 @@ namespace MaybeThisWillWork
         {
             InitializeComponent();
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.DarkGray;
+            ChangeMargins();
+        }
+
+        private async void ChangeMargins()
+        {
+            for (int i = 0; i < PageContent.Children.Count; ++i)
+            {
+                PageContent.Children[i].Margin = 7;
+            }
         }
 
         private async void MoveToHelmetLv1Subpage(object sender, EventArgs e)

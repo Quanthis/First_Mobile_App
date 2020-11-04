@@ -121,7 +121,7 @@
     <value>100%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Using respawn beacons and reviving teammates makes user invisible</value>
+    <value>Invisible during reviving and using respawn beacon</value>
   </data>
   <data name="Tactical" xml:space="preserve">
     <value>Sends a controlable hologram</value>

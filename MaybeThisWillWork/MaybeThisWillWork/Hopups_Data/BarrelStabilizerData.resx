@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="compatibileWeapons" xml:space="preserve">
-    <value>R301, Alternator, Devotion, G7Scout, Hemlok, Longbow, Re45, Spitfire, Volt</value>
+    <value>R99, R301, Alternator, Devotion, G7Scout, Hemlok, Longbow, Re45, Spitfire, Volt</value>
   </data>
   <data name="property" xml:space="preserve">
     <value>Decreases recoil. Level 4 also reduces highlight</value>

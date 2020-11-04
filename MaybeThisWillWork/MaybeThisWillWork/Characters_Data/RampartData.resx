@@ -121,7 +121,7 @@
     <value>100%</value>
   </data>
   <data name="Passive" xml:space="preserve">
-    <value>Increases mag sizes of LMG and reduces their recoil time</value>
+    <value>Increases mag sizes of LMG and reduces their holster time</value>
   </data>
   <data name="Tactical" xml:space="preserve">
     <value>Places a destroyable wall that blocks incoming damage</value>

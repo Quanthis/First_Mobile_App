@@ -9,7 +9,7 @@
     </NavigationPage.TitleView>
 
     <ScrollView>
-        <StackLayout Margin="20" VerticalOptions="CenterAndExpand" >
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand" x:Name="PageContent">
 
             <Button Text="Weapons" Clicked="MoveToWeaponsSubpage" Margin="10" />
 

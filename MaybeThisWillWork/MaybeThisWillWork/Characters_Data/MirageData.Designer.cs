@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Using respawn beacons and reviving teammates makes user invisible.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Invisible during reviving and using respawn beacon.
         /// </summary>
         internal static string Passive {
             get {

@@ -12,7 +12,7 @@
         <ScrollView>
             <StackLayout x:Name="PageContent" Margin="20">
 
-                <Image Source="PhoenixKit.png"/>
+                <Image Source="PhoenixKit.png" Margin="20"/>
 
             </StackLayout>
         </ScrollView>

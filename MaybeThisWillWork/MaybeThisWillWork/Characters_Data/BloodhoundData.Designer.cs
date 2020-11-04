@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Scans for enemies and trapes in front of user, ignores walls.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Scans for enemies and trapes in front of legend, ignores walls.
         /// </summary>
         internal static string Tactical {
             get {

@@ -127,7 +127,7 @@
     <value>Being in Nox gas make enemies easier to detect</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Places a gas trap</value>
+    <value>Places a gas trap (up to 6 at once)</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Cover certain area with gas</value>

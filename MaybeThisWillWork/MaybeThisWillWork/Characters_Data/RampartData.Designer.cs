@@ -70,7 +70,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Increases mag sizes of LMG and reduces their recoil time.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Increases mag sizes of LMG and reduces their holster time.
         /// </summary>
         internal static string Passive {
             get {

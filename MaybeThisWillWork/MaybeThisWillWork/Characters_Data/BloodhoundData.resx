@@ -127,7 +127,7 @@
     <value>Allow user to see enemy tracks</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Scans for enemies and trapes in front of user, ignores walls</value>
+    <value>Scans for enemies and trapes in front of legend, ignores walls</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Makes enemies red - colored, increase speed. Allow user too see track with distance. Knockdowns extends time duration</value>

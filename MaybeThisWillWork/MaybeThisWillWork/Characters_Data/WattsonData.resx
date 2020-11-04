@@ -124,9 +124,9 @@
     <value>Using an Ultimate Accelerant reduces ultimate cooldown by 100%</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Places an electrical fence</value>
+    <value>Places an electrical fence dealing 15 damage each wave</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
-    <value>Sets Pylon that destroys nearby grenades, regenerate everyone shields and reduce tactical ability cooldown</value>
+    <value>Sets Pylon that destroys nearby grenades, regenerate everyone shields and reduces Wattson's tactical ability cooldown</value>
   </data>
 </root>

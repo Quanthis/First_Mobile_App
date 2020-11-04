@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="compatibileWeapons" xml:space="preserve">
-    <value>R301, Alternator, G7Scout, Re45, P2020</value>
+    <value>R99, R301, Alternator, G7Scout, Re45, P2020</value>
   </data>
   <data name="property" xml:space="preserve">
     <value>Increased maximum amount of ammunition hold in weapon using light rounds</value>

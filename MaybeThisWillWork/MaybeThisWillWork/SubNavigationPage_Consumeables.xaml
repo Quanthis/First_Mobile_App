@@ -16,9 +16,9 @@
 
                 <Button Text="Med Kit" Clicked="MoveToMedKit" Margin="10"/>
 
-                <Button Text="ShieldCell" Clicked="MoveToShieldCell" Margin="10"/>
+                <Button Text="Shield Cell" Clicked="MoveToShieldCell" Margin="10"/>
 
-                <Button Text="ShieldBattery" Clicked="MoveToShieldBattery" Margin="10"/>
+                <Button Text="Shield Battery" Clicked="MoveToShieldBattery" Margin="10"/>
 
                 <Button Text="Phoenix Kit" Clicked="MoveToPhoenixKit" Margin="10"/>
 

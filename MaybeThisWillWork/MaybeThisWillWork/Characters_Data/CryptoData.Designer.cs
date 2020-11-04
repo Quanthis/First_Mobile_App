@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Switches to controlable drone view.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Switches to controllable drone view.
         /// </summary>
         internal static string Tactical {
             get {

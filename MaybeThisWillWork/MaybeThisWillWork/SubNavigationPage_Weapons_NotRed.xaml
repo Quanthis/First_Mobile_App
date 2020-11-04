@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MaybeThisWillWork.SubNavigationPage_Weapons"
+             x:Class="MaybeThisWillWork.SubNavigationPage_Weapons_NotRed"
              BackgroundImageSource="Background.png">
 
     <NavigationPage.TitleView>
@@ -20,8 +20,8 @@
 
                 <Button Text="Havoc Rifle" Clicked="MoveToHavocPage"/>
 
-                <Button Text="Hemlok Burst AR" Clicked="MoveToHemlokPage"/>                
-               
+                <Button Text="Hemlok Burst AR" Clicked="MoveToHemlokPage"/>
+
 
                 <Button Text="Alternator" Clicked="MoveToAlternatorPage"/>
 
@@ -31,8 +31,8 @@
 
                 <Button Text="R99" Clicked="MoveToR99Page"/>
 
-                
-                
+
+
                 <Button Text="Devotion" Clicked="MoveToDevotionPage"/>
 
                 <Button Text="Spitfire" Clicked="MoveToSpitfirePage"/>
@@ -48,18 +48,15 @@
 
                 <Button Text="Triple Take" Clicked="MoveToTripleTakePage"/>
 
-                <Button Text="Kraber .50-cal Sniper" Clicked="MoveToKraberPage"/>
-                
+
 
                 <Button Text="Eva-8 Auto" Clicked="MoveToEva8Page"/>
 
                 <Button Text="Mastiff" Clicked="MoveToMastiffPage"/>
 
-                <Button Text="Peacekeeper" Clicked="MoveToPeacekeeperPage"/>
-
 
                 <Button Text="Mozambique Shotgun" Clicked="MoveToMozambiquePage"/>
-                
+
                 <Button Text="P2020" Clicked="MoveToP2020Page"/>
 
                 <Button Text="Wingman" Clicked="MoveToWingmanPage"/>

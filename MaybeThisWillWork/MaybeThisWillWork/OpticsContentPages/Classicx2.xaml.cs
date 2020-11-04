@@ -51,7 +51,7 @@ namespace MaybeThisWillWork.OpticsContentPages
         #region LoadWeaponPages
         private async void MoveToWeaponsPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SubNavigationPage_Weapons());
+            await Navigation.PushAsync(new SubNavigationPage_Weapons_NotRed());
         }
 
         private async void MoveToR99Subpage(object sender, EventArgs e)

@@ -10,7 +10,7 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout x:Name="PageLayout" Margin="20">
+            <StackLayout Margin="20" x:Name="PageContent">
 
                 <Button Text="Helmet Level 1" Clicked="MoveToHelmetLv1Subpage" />
 

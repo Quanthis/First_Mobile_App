@@ -124,7 +124,7 @@
     <value>Creeps faster and climbs higher</value>
   </data>
   <data name="Tactical" xml:space="preserve">
-    <value>Blocks enemy abilities</value>
+    <value>Throws field that blocks enemy abilities for several seconds (2 loads)</value>
   </data>
   <data name="Ultimate" xml:space="preserve">
     <value>Activates death totem that block enemy abilities. Deactivates armor</value>

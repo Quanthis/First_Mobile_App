@@ -59,5 +59,23 @@ namespace MaybeThisWillWork.Consumeables_Data {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Reduces ultimate cooldown by 35 percentage points.
+        /// </summary>
+        internal static string property {
+            get {
+                return ResourceManager.GetString("property", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Takes 7 seconds to use.
+        /// </summary>
+        internal static string usageTime {
+            get {
+                return ResourceManager.GetString("usageTime", resourceCulture);
+            }
+        }
     }
 }

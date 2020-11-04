@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places a gas trap.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places a gas trap (up to 6 at once).
         /// </summary>
         internal static string Tactical {
             get {

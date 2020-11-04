@@ -90,10 +90,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MedKitData.resx</DependentUpon>
     </Compile>
-    <Compile Update="Consumeables_Data\PhoenixKit.Designer.cs">
+    <Compile Update="Consumeables_Data\PhoenixKitData.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>PhoenixKit.resx</DependentUpon>
+      <DependentUpon>PhoenixKitData.resx</DependentUpon>
     </Compile>
     <Compile Update="Consumeables_Data\ShieldBatteryData.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -488,7 +488,31 @@
     <EmbeddedResource Update="CharacterContentPages\Bangalore.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Caustuc.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Crypto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Loba.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Mirage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Octane.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="CharacterContentPages\Pathfinder.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Rampart.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Revenant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CharacterContentPages\Wattson.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="CharacterContentPages\Wraith.xaml">
@@ -556,9 +580,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MedKitData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Consumeables_Data\PhoenixKit.resx">
+    <EmbeddedResource Update="Consumeables_Data\PhoenixKitData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PhoenixKit.Designer.cs</LastGenOutput>
+      <LastGenOutput>PhoenixKitData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Consumeables_Data\ShieldBatteryData.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -918,6 +942,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SubNavigationPage_Sights.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SubNavigationPage_Weapons_NotRed.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="WeaponContentPages\Eva8.xaml">

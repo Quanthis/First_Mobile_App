@@ -1,62 +1,27 @@
 ﻿using MaybeThisWillWork.WeaponContentPages;
 using System;
-using System.Collections.Generic;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MaybeThisWillWork.OpticsContentPages
+namespace MaybeThisWillWork
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Classicx1 : ContentPage
+    public partial class SubNavigationPage_Weapons_NotRed : ContentPage
     {
-        public Classicx1()
+        public SubNavigationPage_Weapons_NotRed()
         {
             InitializeComponent();
 
-            ContentLoader_Optics contentLoader = new ContentLoader_Optics(ContentLoader_Optics.Sights.Classicx1, PageContent);
-            contentLoader.Fill();
-
-            PageContent = AddButtons(contentLoader);
+            ChangeMargins();
         }
 
-        private StackLayout AddButtons(ContentLoader_Optics contentLoader)
+        private async void ChangeMargins()
         {
-            List<Button> buttons = contentLoader.GetButtons();
-
-            foreach (var item in buttons)
+            for (int i = 0; i < PageContent.Children.Count; ++i)
             {
-                try
-                {
-                    string methodName = item.AutomationId;
-                    EventHandler handler = (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), this, methodName, false);
-                    item.Clicked += handler;
-                    PageContent.Children.Add(item);
-                }
-                catch (Exception ex)
-                {
-                    string methodName = AutomationId;
-
-                    Label InfoLabel = new Label
-                    {
-                        Text = "Method name: " + methodName + "\nThere was an Exception: " + ex,
-                        TextColor = Color.White
-                    };
-                    PageContent.Children.Add(InfoLabel);
-                }
+                PageContent.Children[i].Margin = 7;
             }
-
-            return PageContent;
-        }
-
-        #region LoadWeaponPages
-        private async void MoveToWeaponsPage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SubNavigationPage_Weapons_NotRed());
-        }
-
-        private async void MoveToR99Subpage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MaybeThisWillWork.WeaponContentPages.R99());
         }
 
         private async void MoveToR301Page(object sender, EventArgs e)
@@ -124,11 +89,6 @@ namespace MaybeThisWillWork.OpticsContentPages
             await Navigation.PushAsync(new TripleTakexaml());
         }
 
-        private async void MoveToKraberPage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Kraber());
-        }
-
         private async void MoveToEva8Page(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Eva8());
@@ -171,6 +131,5 @@ namespace MaybeThisWillWork.OpticsContentPages
         {
             await Navigation.PushAsync(new Lstar());
         }
-        #endregion
     }
 }

@@ -85,7 +85,8 @@ namespace MaybeThisWillWork
 
             property = new Label
             {
-                Text = consumeable.ReturnValues()[0]
+                Text = consumeable.ReturnValues()[0],
+                Margin = 7
             };
 
             usageTime = new Label
@@ -94,7 +95,7 @@ namespace MaybeThisWillWork
             };
 
             layout.Children.Add(SetLabelProperties(property));
-            layout.Children.Add(SetLabelProperties(property));
+            layout.Children.Add(SetLabelProperties(usageTime));
 
             return layout;
         }
@@ -112,6 +113,7 @@ namespace MaybeThisWillWork
             return result;
         }
 
+        #region UImethods
         private Label SetLabelProperties(Label toSet)
         {
             toSet.FontSize = 17;
@@ -121,5 +123,19 @@ namespace MaybeThisWillWork
 
             return toSet;
         }
+
+        private Label SetTitleLabelProperties(Label toSet)
+        {
+            toSet.Margin = 3;
+            toSet.LineHeight = 1;
+            toSet.TextColor = Xamarin.Forms.Color.White;
+            toSet.TextType = TextType.Html;
+
+            toSet.Font = Font.SystemFontOfSize(17)
+              .WithAttributes(FontAttributes.Bold);
+
+            return toSet;
+        }
+        #endregion
     }
 }

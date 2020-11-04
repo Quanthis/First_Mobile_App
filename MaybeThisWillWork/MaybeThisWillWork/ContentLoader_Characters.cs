@@ -93,6 +93,70 @@ namespace MaybeThisWillWork
 
                     return result;
 
+                case Characters.Caustic:
+
+                    fullPath = allDefensiveGearsResourcePath + "CausticData";
+
+                    result = FillCharacter(result, fullPath, true);
+
+                    return result;
+
+                case Characters.Crypto:
+
+                    fullPath = allDefensiveGearsResourcePath + "CryptoData";
+
+                    result = FillCharacter(result, fullPath, true);
+
+                    return result;
+
+                case Characters.Loba:
+
+                    fullPath = allDefensiveGearsResourcePath + "LobaData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Mirage:
+
+                    fullPath = allDefensiveGearsResourcePath + "MirageData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Octane:
+
+                    fullPath = allDefensiveGearsResourcePath + "OctaneData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Rampart:
+
+                    fullPath = allDefensiveGearsResourcePath + "RampartData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Revenant:
+
+                    fullPath = allDefensiveGearsResourcePath + "RevenantData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
+                case Characters.Wattson:
+
+                    fullPath = allDefensiveGearsResourcePath + "WattsonData";
+
+                    result = FillCharacter(result, fullPath, false);
+
+                    return result;
+
                 default:
 
                     return result;

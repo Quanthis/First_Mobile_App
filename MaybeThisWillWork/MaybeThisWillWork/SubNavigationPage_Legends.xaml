@@ -19,9 +19,26 @@
 
             <Button Text="Pathfinder" Clicked="MoveToPathfinderSubpage" Margin="7"/>
 
+            <Button Text="Wraith" Clicked="MoveToWraithSubpage" Margin="7"/>
+
             <Button Text="Bangalore" Clicked="MoveToBangaloreSubpage" Margin="7"/>
 
-            <Button Text="Wraith" Clicked="MoveToWraithSubpage" Margin="7"/>
+            <Button Text="Caustic" Clicked="MoveToCausticSubpage" Margin="7"/>
+
+            <Button Text="Mirage" Clicked="MoveToMirageSubpage" Margin="7"/>
+
+            <Button Text="Octane" Clicked="MoveToOctaneSubpage" Margin="7"/>
+
+            <Button Text="Wattson" Clicked="MoveToWattsonSubpage" Margin="7"/>
+
+            <Button Text="Crypto" Clicked="MoveToCryptoSubpage" Margin="7"/>
+
+            <Button Text="Revenant" Clicked="MoveToRevenantSubpage" Margin="7"/>
+
+            <Button Text="Loba" Clicked="MoveToLobaSubpage" Margin="7"/>
+
+            <Button Text="Rampart" Clicked="MoveToRampartSubpage" Margin="7"/>
+
 
         </StackLayout>
     </ScrollView>

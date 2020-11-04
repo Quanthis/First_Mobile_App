@@ -79,7 +79,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places an electrical fence.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Places an electrical fence dealing 15 damage each wave.
         /// </summary>
         internal static string Tactical {
             get {
@@ -88,7 +88,7 @@ namespace MaybeThisWillWork.Characters_Data {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Sets Pylon that destroys nearby grenades, regenerate everyone shields and reduce tactical ability cooldown.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Sets Pylon that destroys nearby grenades, regenerate everyone shields and reduces Wattson&apos;s tactical ability cooldown.
         /// </summary>
         internal static string Ultimate {
             get {

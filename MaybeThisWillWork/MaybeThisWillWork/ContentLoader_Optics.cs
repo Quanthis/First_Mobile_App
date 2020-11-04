@@ -151,7 +151,8 @@ namespace MaybeThisWillWork
                     button = new Xamarin.Forms.Button
                     {
                         Text = item,
-                        AutomationId = $"MoveTo{item}Page"
+                        AutomationId = $"MoveTo{item}Page",
+                        Margin = 7
                     };
 
                     compatibileWeapons.Add(button);
