@@ -59,5 +59,23 @@ namespace MaybeThisWillWork.Optics_Data {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu AllWeapons.
+        /// </summary>
+        internal static string compatibileWeapons {
+            get {
+                return ResourceManager.GetString("compatibileWeapons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Mounts slightly soiled optic with variable zoom (no zoom - 2x zoom) on top of a weapon.  Sunbeams may reflect to character when looking through optic.
+        /// </summary>
+        internal static string description {
+            get {
+                return ResourceManager.GetString("description", resourceCulture);
+            }
+        }
     }
 }

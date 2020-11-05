@@ -197,6 +197,7 @@ namespace MaybeThisWillWork
                 button = new Xamarin.Forms.Button
                 {
                     Text = item,
+                    Margin = 7,
                     AutomationId = $"MoveTo{item}Page"
                 };
 

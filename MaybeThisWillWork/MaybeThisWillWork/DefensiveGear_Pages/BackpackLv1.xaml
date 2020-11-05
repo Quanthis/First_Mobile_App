@@ -12,7 +12,6 @@
         <ScrollView>
             <StackLayout x:Name="PageContent">
 
-                <Image Source="BackpackLv1.PNG" />
 
             </StackLayout>
         </ScrollView>

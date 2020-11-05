@@ -240,7 +240,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -257,7 +257,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -269,7 +269,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateBackpackFromData(fullResourcePath).ReturnValues()[1, 0]
                 };
-                result.Children.Add(SetLabelProperties(specialEffectTitle));
+                result.Children.Add(SetTitleLabelProperties(specialEffectTitle));
 
                 specialEffect = new Label
                 {
@@ -294,7 +294,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -310,7 +310,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -322,7 +322,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateKnockdownShieldFromData(fullResourcePath).ReturnValues()[1, 0]
                 };
-                result.Children.Add(SetLabelProperties(specialEffectTitle));
+                result.Children.Add(SetTitleLabelProperties(specialEffectTitle));
 
                 specialEffect = new Label
                 {
@@ -349,7 +349,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -363,7 +363,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -375,7 +375,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 0]
                 };
-                result.Children.Add(SetLabelProperties(specialEffectTitle));
+                result.Children.Add(SetTitleLabelProperties(specialEffectTitle));
 
                 specialEffect = new Label
                 {
@@ -390,7 +390,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[2, 0]
                 };
-                result.Children.Add(SetLabelProperties(toEvolveTitle));
+                result.Children.Add(SetTitleLabelProperties(toEvolveTitle));
 
                 toEvolve = new Label
                 {
@@ -415,7 +415,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -429,7 +429,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[0, 0]
                 };
-                result.Children.Add(SetLabelProperties(usualPropertyTitle));
+                result.Children.Add(SetTitleLabelProperties(usualPropertyTitle));
 
                 usualProperty = new Label
                 {
@@ -441,7 +441,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateArmorFromData(fullResourcePath).ReturnValues()[1, 0]
                 };
-                result.Children.Add(SetLabelProperties(specialEffectTitle));
+                result.Children.Add(SetTitleLabelProperties(specialEffectTitle));
 
                 specialEffect = new Label
                 {
@@ -472,7 +472,7 @@ namespace MaybeThisWillWork
                 {
                     Text = CreateHelmetFromData(fullResourcePath).ReturnValues()[0, 1]
                 };
-                result.Children.Add(SetTitleLabelProperties(usualProperty));
+                result.Children.Add(SetLabelProperties(usualProperty));
 
                 return result;
             }

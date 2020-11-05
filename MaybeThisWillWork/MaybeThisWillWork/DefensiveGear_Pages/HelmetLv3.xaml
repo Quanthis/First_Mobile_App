@@ -12,8 +12,6 @@
         <StackLayout x:Name="Content">
 
 
-            <Image Source="HelmetLv3.PNG" />
-
 
 
         </StackLayout>

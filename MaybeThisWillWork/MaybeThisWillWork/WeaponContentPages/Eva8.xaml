@@ -12,7 +12,6 @@
         <ScrollView>
             <StackLayout x:Name="Eva8Info" Margin="20">
                 
-                <Image Source="Eva8Image.PNG" />
                 
             </StackLayout>
         </ScrollView>

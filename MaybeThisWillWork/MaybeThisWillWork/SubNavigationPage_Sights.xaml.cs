@@ -44,7 +44,7 @@ namespace MaybeThisWillWork
         }
         private async void MoveToAOGx2_4(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new OpticsContentPages.Classicx1());
+            await Navigation.PushAsync(new OpticsContentPages.AOGx2_4());
         }
 
         private async void MoveToSniperx6(object sender, EventArgs e)

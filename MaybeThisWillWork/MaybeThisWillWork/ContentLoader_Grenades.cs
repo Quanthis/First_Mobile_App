@@ -101,7 +101,7 @@ namespace MaybeThisWillWork
                 Text = grendeValues[1, 1]
             };
 
-            try
+            /*try
             {
                 ImageSource imageSource = grenade.GetImageSource();
 
@@ -120,7 +120,7 @@ namespace MaybeThisWillWork
                     TextColor = Color.White
                 };
                 result.Children.Add(errorLabel);
-            }
+            }*/
 
             result.Children.Add(SetTitleLabelProperties(desciptionTitle));
             result.Children.Add(SetLabelProperties(description));
@@ -132,7 +132,7 @@ namespace MaybeThisWillWork
 
         public Grenade CreateGrenadeFromData(string resourcePath)
         {
-            try
+          /*  try
             {
                 ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
                 Grenade result;
@@ -144,8 +144,8 @@ namespace MaybeThisWillWork
                 result = new Grenade(description, damage, imageSource);
 
                 return result;
-            }
-            catch(Exception)
+            }*/
+           // catch(Exception)
             {
                 ResourceManager resourceManager = new ResourceManager(resourcePath, Assembly.GetExecutingAssembly());
                 Grenade result;

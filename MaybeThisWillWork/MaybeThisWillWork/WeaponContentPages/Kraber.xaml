@@ -10,7 +10,6 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="WeaponInfo" Margin="20">
-                <Image Source="KraberImage.PNG" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -10,12 +10,12 @@ namespace MaybeThisWillWork
         private string damage;
         private ImageSource imageSource;
 
-        public Grenade(string property, string damage, ImageSource imageSource)
+        /*public Grenade(string property, string damage, ImageSource imageSource)
         {
             this.property = property;
             this.damage = damage;
             this.imageSource = imageSource;
-        }
+        }*/
 
         public Grenade(string property, string damage)
         {
@@ -35,9 +35,9 @@ namespace MaybeThisWillWork
             return result;
         }
 
-        public ImageSource GetImageSource()
+        /*public ImageSource GetImageSource()
         {
             return imageSource;
-        }
+        }*/
     }
 }

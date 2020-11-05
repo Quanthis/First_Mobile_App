@@ -10,7 +10,6 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout x:Name="DevotionInfo" Margin="20">
-                <Image Source="DevotionImage.PNG" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

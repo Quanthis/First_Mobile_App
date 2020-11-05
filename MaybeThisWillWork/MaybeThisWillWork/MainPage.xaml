@@ -25,6 +25,8 @@
 
             <Button Text="Consumeables" Clicked="MoveToConsumeablesSubpage" Margin="10"/>
 
+            <Label Text="This app is not affiliated with or sponsored by Electronic Arts Inc. or its licensors." TextColor="LightGray" FontSize="10"/>
+
         </StackLayout>
     </ScrollView>
 

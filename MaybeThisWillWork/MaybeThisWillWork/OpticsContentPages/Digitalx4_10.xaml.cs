@@ -13,7 +13,7 @@ namespace MaybeThisWillWork.OpticsContentPages
         {
             InitializeComponent();
 
-            ContentLoader_Optics contentLoader = new ContentLoader_Optics(ContentLoader_Optics.Sights.Sniperx4_8, PageContent);
+            ContentLoader_Optics contentLoader = new ContentLoader_Optics(ContentLoader_Optics.Sights.Digitalx4_10, PageContent);
             contentLoader.Fill();
 
             PageContent = AddButtons(contentLoader);
