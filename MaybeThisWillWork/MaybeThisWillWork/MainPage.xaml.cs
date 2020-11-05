@@ -54,5 +54,10 @@ namespace MaybeThisWillWork
         {
             await Navigation.PushAsync(new SubNavigationPage_Consumeables());
         }
+
+        private async void MoveToLicensesSubpage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new License());
+        }
     }
 }
